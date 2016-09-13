@@ -1,0 +1,23 @@
+export ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="cloud"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+export LANG=en_US.UTF-8
+export EDITOR='nvim'
+
+# 2mundos
+alias 2m="cd ~/projects/2mundos"
+alias labs="cd ~/projects/labs"
+
+# util
+alias dotfiles="cd ~/.dotfiles"
+alias meteor="meteor --settings settings.json"
+alias wat="echo '¯\_(ツ)_/¯'"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.dotfiles/git:$PATH"
+
+eval "$(rbenv init -)"
