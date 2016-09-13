@@ -14,7 +14,7 @@ echo
 for file in `git-grep-files $original`; do
   echo "Replacing in $file"
 
-  sed -i '' "s/$1/$2/g" $file;
+  sed -i "s/$1/$2/g" $file;
 done;
 
 echo;
