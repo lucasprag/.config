@@ -3,4 +3,4 @@
 # copied from https://github.com/philss/dotfiles
 
 # Grep files that contains a given term
-git grep $1 | awk -F ':' '{print $1}' | sort | uniq
+git grep $1 | awk -F ':' '{print $1 $2}' | sort | uniq
