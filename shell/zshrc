@@ -8,16 +8,24 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
 
+# docker
+alias compose="docker-compose"
+
 # 2mundos
 alias 2m="cd ~/projects/2mundos"
 alias labs="cd ~/projects/labs"
 
 # util
 alias dotfiles="cd ~/.dotfiles"
-alias meteor="meteor --settings settings.json"
+alias meteory="meteor --settings settings.json"
 alias wat="echo '¯\_(ツ)_/¯'"
 
+# javascript
+export PATH=/usr/local/bin/depot_tools:"$PATH"
+
+# ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 export PATH="$HOME/.dotfiles/git:$PATH"
 
-eval "$(rbenv init -)"
