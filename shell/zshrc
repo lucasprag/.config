@@ -17,7 +17,7 @@ alias labs="cd ~/projects/labs"
 
 # util
 alias dotfiles="cd ~/.dotfiles"
-alias meteory="meteor --settings settings.json"
+alias bad="meteor --settings settings.json"
 alias wat="echo '¯\_(ツ)_/¯'"
 
 # javascript
