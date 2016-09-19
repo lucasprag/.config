@@ -14,11 +14,11 @@ alias compose="docker-compose"
 # 2mundos
 alias 2m="cd ~/projects/2mundos"
 alias labs="cd ~/projects/labs"
+alias bad="meteor --settings settings.json"
+alias wat="echo '¯\_(ツ)_/¯'" # util to copy and paste
 
 # util
 alias dotfiles="cd ~/.dotfiles"
-alias bad="meteor --settings settings.json"
-alias wat="echo '¯\_(ツ)_/¯'"
 
 # javascript
 export PATH=/usr/local/bin/depot_tools:"$PATH"
