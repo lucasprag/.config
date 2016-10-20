@@ -1,4 +1,7 @@
 #!/bin/bash
 
 # shell
-ln -sv ~/.dotfiles/shell/zshrc ~/.zshrc
+ln -sv ~/.dotfiles/zshrc ~/.zshrc
+
+# tmux
+ln -sv ~/.dotfiles/tmux.conf ~/.tmux.conf

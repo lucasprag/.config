@@ -20,6 +20,7 @@ alias wat="echo '¯\_(ツ)_/¯'" # util to copy and paste
 # util
 alias dotfiles="cd ~/.dotfiles"
 alias vimlociraptor="cd ~/.config/nvim"
+alias ex="cd ~/projects/exercism"
 
 # javascript
 export PATH=/usr/local/bin/depot_tools:"$PATH"
@@ -27,6 +28,12 @@ export PATH=/usr/local/bin/depot_tools:"$PATH"
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# go
+export PATH=$PATH:/usr/local/go/bin
+export GOROOT=$HOME/go
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/projects/labs/go
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
