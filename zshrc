@@ -47,3 +47,7 @@ export PATH="/usr/local/android-studio/bin:$PATH"
 
 # dotfiles git functions
 export PATH="$HOME/.dotfiles/git:$PATH"
+
+# tmuxinator
+source ~/.dotfiles/tmuxinator/tmuxinator.zsh
+export DISABLE_AUTO_TITLE=true

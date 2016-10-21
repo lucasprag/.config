@@ -1,0 +1,10 @@
+# ~/.tmuxinator/tutor.yml
+
+name: tutor
+root: ~/projects/2mundos/tutor-opentok
+startup_window: editor
+
+windows:
+  - server: meteor --settings settings.json
+  - editor: nvim
+  - terminal: wat
