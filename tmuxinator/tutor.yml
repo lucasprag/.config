@@ -8,3 +8,4 @@ windows:
   - server: meteor --settings settings.json
   - editor: nvim
   - terminal: wat
+  - shell: meteor shell
