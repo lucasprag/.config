@@ -1,0 +1,9 @@
+# ~/.tmuxinator/aofl-tutor.yml
+
+name: aofl-tutor
+root: ~/projects/2mundos/aofl-tutor
+startup_window: editor
+
+windows:
+  - editor: nvim
+  - terminal: wat
