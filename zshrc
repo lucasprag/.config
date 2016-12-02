@@ -21,6 +21,10 @@ alias labs="cd ~/projects/labs"
 alias bad="meteor --settings settings.json"
 alias wat="echo '¯\_(ツ)_/¯'" # util to copy and paste
 
+# Tarvos Games
+alias tarvos="cd ~/projects/tarvos"
+alias ski="cd ~/projects/tarvos/ultimate-ski-api"
+
 # util
 alias dotfiles="cd ~/.dotfiles"
 alias vimlociraptor="cd ~/.config/nvim"
