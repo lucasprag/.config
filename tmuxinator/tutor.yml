@@ -5,6 +5,10 @@ root: ~/projects/2mundos/tutor-opentok
 startup_window: editor
 
 windows:
-  - server: meteor --settings settings.json
+  - server:
+      layout: even-horizontal
+      panes:
+        - meteor --settings settings.json
+        - meteor test --driver-package practicalmeteor:mocha --port 3002
   - editor: nvim
   - terminal: wat
