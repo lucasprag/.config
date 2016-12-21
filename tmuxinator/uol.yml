@@ -1,0 +1,14 @@
+# ~/.tmuxinator/uol.yml
+
+name: uol
+root: ~/projects/2mundos/bolao-uol-backend
+startup_window: editor
+
+windows:
+  - server:
+      layout: even-horizontal
+      panes:
+        - meteor --settings settings.json
+        - meteor test --driver-package practicalmeteor:mocha --port 3002
+  - editor: nvim
+  - terminal: wat

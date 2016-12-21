@@ -15,4 +15,5 @@ curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/t
 
 # 2mundos
 ln -sv ~/.dotfiles/tmuxinator/tutor.yml ~/.tmuxinator/tutor.yml
+ln -sv ~/.dotfiles/tmuxinator/uol.yml ~/.tmuxinator/uol.yml
 ln -sv ~/.dotfiles/tmuxinator/aofl-tutor.yml ~/.tmuxinator/aofl-tutor.yml
