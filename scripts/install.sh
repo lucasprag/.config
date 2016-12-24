@@ -21,3 +21,6 @@ curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/t
 ln -sv ~/.dotfiles/tmuxinator/tutor.yml ~/.tmuxinator/tutor.yml
 ln -sv ~/.dotfiles/tmuxinator/uol.yml ~/.tmuxinator/uol.yml
 ln -sv ~/.dotfiles/tmuxinator/aofl-tutor.yml ~/.tmuxinator/aofl-tutor.yml
+
+# personal
+ln -sv ~/.dotfiles/tmuxinator/carolelucas.yml ~/.tmuxinator/carolelucas.yml
