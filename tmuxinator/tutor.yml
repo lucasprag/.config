@@ -2,7 +2,7 @@
 
 name: tutor
 root: ~/projects/2mundos/tutor-opentok
-startup_window: editor
+startup_window: client
 
 windows:
   - server:
@@ -12,3 +12,5 @@ windows:
         - meteor test --driver-package practicalmeteor:mocha --port 3002
   - editor: nvim
   - terminal: wat
+  - client: cd ~/projects/2mundos/aofl-tutor; nvim
+  - gulp: cd ~/projects/2mundos/aofl-tutor/www; gulp
