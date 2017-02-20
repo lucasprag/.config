@@ -24,3 +24,4 @@ ln -sv ~/.dotfiles/tmuxinator/aofl-tutor.yml ~/.tmuxinator/aofl-tutor.yml
 
 # personal
 ln -sv ~/.dotfiles/tmuxinator/carolelucas.yml ~/.tmuxinator/carolelucas.yml
+ln -sv ~/.dotfiles/tmuxinator/camilaeedu.yml ~/.tmuxinator/camilaeedu.yml
