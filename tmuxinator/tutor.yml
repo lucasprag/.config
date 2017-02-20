@@ -3,6 +3,7 @@
 name: tutor
 root: ~/projects/2mundos/tutor-opentok
 startup_window: client
+tmux_options: -2
 
 windows:
   - server:
