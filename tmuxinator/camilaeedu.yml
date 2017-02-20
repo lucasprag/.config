@@ -1,0 +1,10 @@
+# ~/.tmuxinator/camilaeedu.yml
+
+name: camilaeedu
+root: ~/projects/websites/camilaeedu
+startup_window: editor
+
+windows:
+  - server: compose up
+  - editor: nvim
+  - terminal: wat
