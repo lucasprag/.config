@@ -37,22 +37,8 @@ export PATH=/usr/local/bin/depot_tools:"$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# go
-export PATH=$PATH:/usr/local/go/bin
-export GOROOT=$HOME/go
-export PATH=$PATH:$GOROOT/bin
-export GOPATH=$HOME/projects/labs/go
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# java and android
-export JAVA_HOME="/usr/local/java/jdk1.8.0_112"
-export JRE_HOME="/usr/local/java/jdk1.8.0_112/jre"
-export PATH="$PATH:$JRE_HOME/bin:$JAVA_HOME/bin"
-export PATH="/usr/local/android-studio/bin:$PATH"
-export ANDROID_HOME=/home/lucas/Android/Sdk
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools
 
 # dotfiles git functions
 export PATH="$HOME/.dotfiles/git:$PATH"
