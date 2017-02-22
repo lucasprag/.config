@@ -11,6 +11,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
+export SHELL=/usr/bin/zsh
 
 # docker
 alias compose="docker-compose"
