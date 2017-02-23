@@ -1,0 +1,12 @@
+# ~/.tmuxinator/green.yml
+
+name: green
+root: ~/projects/2mundos/green-bunnies-app
+startup_window: editor
+tmux_options: -2
+
+windows:
+  - server: meteor --settings settings.json
+  - editor: nvim
+  - terminal: wat
+  - legacy: cd ~/projects/2mundos/green-bunnies; nvim

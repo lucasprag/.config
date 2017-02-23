@@ -3,6 +3,7 @@
 name: uol
 root: ~/projects/2mundos/bolao-uol-backend
 startup_window: editor
+tmux_options: -2
 
 windows:
   - server:
