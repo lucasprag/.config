@@ -12,6 +12,5 @@ windows:
         - meteor --settings settings.json
         - meteor test --driver-package practicalmeteor:mocha --port 3002
   - editor: nvim
-  - terminal: wat
   - client: cd ~/projects/2mundos/aofl-tutor; nvim
-  - gulp: cd ~/projects/2mundos/aofl-tutor/www; gulp
+  - gulp: cd ~/projects/2mundos/aofl-tutor/www
