@@ -20,6 +20,7 @@ alias compose="docker-compose"
 alias 2m="cd ~/projects/2mundos"
 alias labs="cd ~/projects/labs"
 alias bad="meteor --settings settings.json"
+alias me="meteor"
 alias wat="echo '¯\_(ツ)_/¯'" # util to copy and paste
 
 # Tarvos Games
