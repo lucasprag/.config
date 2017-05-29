@@ -53,5 +53,15 @@ export DISABLE_AUTO_TITLE=true
 eval "$(thefuck --alias)"
 
 # android
-export ANDROID_HOME="$HOME/Library/Android/sdk"
+export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+export METEOR_PACKAGE_DIRS="$HOME/projects/2mundos/packages"
+
+# java
+export M2_HOME=/opt/maven
+export PATH=${M2_HOME}/bin:${PATH}
+export BOOST_ROOT=/usr/local/boost_1_64_0/
+
+# docker
+export DOCKER_HOST="tcp://0.0.0.0:2375"
