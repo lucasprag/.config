@@ -22,6 +22,7 @@ alias labs="cd ~/projects/labs"
 alias bad="meteor --settings settings.json"
 alias me="meteor"
 alias wat="echo '¯\_(ツ)_/¯'" # util to copy and paste
+alias mymeteor=~/projects/labs/meteor/meteor
 
 # Tarvos Games
 alias tarvos="cd ~/projects/tarvos"
@@ -71,5 +72,12 @@ export BOOST_ROOT=/usr/local/boost_1_64_0/
 # docker
 export DOCKER_HOST="tcp://0.0.0.0:2375"
 
-# php
-export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+# PHP
+if [ $(uname) = "Linux" ]
+then
+  export PATH=$PATH:$HOME/.config/composer/vendor/bin
+else
+  # OSX
+  export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+  export PATH=$PATH:$HOME/.composer/vendor/bin
+fi

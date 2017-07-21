@@ -8,4 +8,6 @@ tmux_options: -2
 windows:
   - server: meteor
   - editor: nvim
-  - terminal: wat
+  - client: cd ~/projects/2mundos/client-template; ionic serve
+  - client-editor: cd ~/projects/2mundos/client-template; nvim
+
