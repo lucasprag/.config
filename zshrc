@@ -45,6 +45,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # dotfiles git functions
 export PATH="$HOME/.dotfiles/git:$PATH"
 
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
 # tmuxinator
 source ~/.dotfiles/tmuxinator/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
@@ -65,3 +67,6 @@ export BOOST_ROOT=/usr/local/boost_1_64_0/
 
 # docker
 export DOCKER_HOST="tcp://0.0.0.0:2375"
+
+# php
+export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
