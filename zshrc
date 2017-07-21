@@ -32,6 +32,9 @@ alias dotfiles="cd ~/.dotfiles"
 alias vimlociraptor="cd ~/.config/nvim"
 alias ex="cd ~/projects/exercism"
 
+# site de sucesso
+alias sitedesucesso="cd ~/projects/sitedesucesso"
+
 # javascript
 export PATH=/usr/local/bin/depot_tools:"$PATH"
 
