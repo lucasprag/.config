@@ -27,6 +27,7 @@ alias mymeteor=~/projects/labs/meteor/meteor
 # Tarvos Games
 alias tarvos="cd ~/projects/tarvos"
 alias ski="cd ~/projects/tarvos/ultimate-ski-api"
+alias jam="cd ~/projects/games/i-wish-i-could-have-chosen-more-wisely"
 
 # util
 alias dotfiles="cd ~/.dotfiles"
