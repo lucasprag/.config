@@ -24,11 +24,6 @@ alias me="meteor"
 alias wat="echo '¯\_(ツ)_/¯'" # util to copy and paste
 alias mymeteor=~/projects/labs/meteor/meteor
 
-# Tarvos Games
-alias tarvos="cd ~/projects/tarvos"
-alias ski="cd ~/projects/tarvos/ultimate-ski-api"
-alias jam="cd ~/projects/games/i-wish-i-could-have-chosen-more-wisely"
-
 # util
 alias dotfiles="cd ~/.dotfiles"
 alias vimlociraptor="cd ~/.config/nvim"
@@ -36,9 +31,6 @@ alias ex="cd ~/projects/exercism"
 
 # site de sucesso
 alias sitedesucesso="cd ~/projects/sitedesucesso"
-
-# javascript
-export PATH=/usr/local/bin/depot_tools:"$PATH"
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -50,35 +42,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # dotfiles git functions
 export PATH="$HOME/.dotfiles/git:$PATH"
 
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-
 # tmuxinator
 source ~/.dotfiles/tmuxinator/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
-
-# fuck!
-eval "$(thefuck --alias)"
-
-# android
-export ANDROID_HOME="$HOME/Android/Sdk"
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
-export METEOR_PACKAGE_DIRS="$HOME/projects/2mundos/packages"
-
-# java
-export M2_HOME=/opt/maven
-export PATH=${M2_HOME}/bin:${PATH}
-export BOOST_ROOT=/usr/local/boost_1_64_0/
-
-# docker
-export DOCKER_HOST="tcp://0.0.0.0:2375"
-
-# PHP
-if [ $(uname) = "Linux" ]
-then
-  export PATH=$PATH:$HOME/.config/composer/vendor/bin
-else
-  # OSX
-  export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
-  export PATH=$PATH:$HOME/.composer/vendor/bin
-fi
