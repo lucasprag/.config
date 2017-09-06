@@ -16,14 +16,6 @@ export SHELL=zsh
 # docker
 alias compose="docker-compose"
 
-# 2mundos
-alias 2m="cd ~/projects/2mundos"
-alias labs="cd ~/projects/labs"
-alias bad="meteor --settings settings.json"
-alias me="meteor"
-alias wat="echo '¯\_(ツ)_/¯'" # util to copy and paste
-alias mymeteor=~/projects/labs/meteor/meteor
-
 # util
 alias dotfiles="cd ~/.dotfiles"
 alias vimlociraptor="cd ~/.config/nvim"
