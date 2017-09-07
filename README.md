@@ -11,3 +11,10 @@ My personal dot files.
 - [[Vim]lociraptor](https://github.com/Lucasosf/vimlociraptor)
 - [tmux](https://tmux.github.io/)
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator)
+
+
+## Mac
+
+Map left option key as `+Esc`, Preferences > Profiles > Keys:
+
+# ![images/esc](images/esc.png)
