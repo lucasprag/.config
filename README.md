@@ -18,3 +18,10 @@ My personal dot files.
 Map left option key as `+Esc`, Preferences > Profiles > Keys:
 
 # ![images/esc](images/esc.png)
+
+
+Install `reattach-to-user-namespace` in order to use copy and paste again:
+
+```bash
+brew install reattach-to-user-namespace
+```
