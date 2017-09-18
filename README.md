@@ -13,6 +13,9 @@ My personal dot files.
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 
 
+## Tips
+- [tmux cheat sheet](https://gist.github.com/andreyvit/2921703)
+
 ## Mac
 
 Map left option key as `+Esc`, Preferences > Profiles > Keys:

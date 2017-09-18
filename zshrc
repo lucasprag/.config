@@ -19,10 +19,13 @@ alias compose="docker-compose"
 # util
 alias dotfiles="cd ~/.dotfiles"
 alias vimlociraptor="cd ~/.config/nvim"
-alias ex="cd ~/projects/exercism"
+alias ex="cd ~/Projects/exercism"
 
 # site de sucesso
-alias sitedesucesso="cd ~/projects/sitedesucesso"
+alias sitedesucesso="cd ~/Projects/sitedesucesso"
+
+# Iugu
+alias iugu="cd ~/Projects/iugu"
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"

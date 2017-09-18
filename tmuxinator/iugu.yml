@@ -1,0 +1,11 @@
+# ~/.tmuxinator/iugu.yml
+
+name: iugu
+root: ~/Projects/developmentstack/iugu
+startup_window: editor
+tmux_options: -2
+
+windows:
+  - server: echo "o/"
+  - editor: nvim
+  - terminal: echo "o/"

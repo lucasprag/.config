@@ -17,3 +17,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # tmuxinator
 curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh > ~/.dotfiles/tmuxinator/tmuxinator.zsh
+
+# Iugu
+ln -sv ~/.dotfiles/tmuxinator/iugu.yml ~/.tmuxinator/iugu.yml
