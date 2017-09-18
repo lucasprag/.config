@@ -34,6 +34,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # dotfiles git functions
 export PATH="$HOME/.dotfiles/git:$PATH"
 
+# true color for tmux
+alias tmux="env TERM=xterm-256color tmux"
+
 # tmuxinator
 source ~/.dotfiles/tmuxinator/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
