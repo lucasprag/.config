@@ -15,7 +15,7 @@ export SHELL=zsh
 
 # docker
 alias compose="docker-compose"
-alias cup="docker-compose"
+alias cup="compose up"
 
 # util
 alias dotfiles="cd ~/.dotfiles"
