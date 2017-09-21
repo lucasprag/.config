@@ -15,6 +15,7 @@ export SHELL=zsh
 
 # docker
 alias compose="docker-compose"
+alias c="docker-compose" # even more pro
 alias cup="compose up"
 
 # util
