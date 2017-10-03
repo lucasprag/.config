@@ -6,11 +6,11 @@ startup_window: editor
 tmux_options: -2
 
 windows:
+  - n: cd ~/Dropbox/devnotes ; nvim
   - server:
       layout: main-horizontal
       panes:
         - compose up
         - ruby --version
-  - editor: nvim
   - platform: cd projects/platform
-  - web: cd projects/legacy-web-application
+  - LWA: cd projects/legacy-web-application
