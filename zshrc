@@ -17,6 +17,7 @@ export SHELL=zsh
 alias compose="docker-compose"
 alias c="docker-compose" # even more pro
 alias cup="compose up"
+alias again="c build platform ; cup"
 
 # util
 alias dotfiles="cd ~/.dotfiles"
@@ -26,8 +27,11 @@ alias ex="cd ~/Projects/exercism"
 # site de sucesso
 alias sitedesucesso="cd ~/Projects/sitedesucesso"
 
-# Iugu
+# iugu
 alias iugu="cd ~/Projects/iugu"
+
+# labs
+alias labs="cd ~/Projects/labs"
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -45,3 +49,6 @@ alias tmux="env TERM=xterm-256color tmux"
 # tmuxinator
 source ~/.dotfiles/tmuxinator/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
+
+# go
+export PATH=$PATH:/usr/local/go/bin
