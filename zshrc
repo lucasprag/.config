@@ -23,6 +23,7 @@ alias again="c build platform ; cup"
 alias dotfiles="cd ~/.dotfiles"
 alias vimlociraptor="cd ~/.config/nvim"
 alias ex="cd ~/Projects/exercism"
+alias m="make"
 
 # site de sucesso
 alias sitedesucesso="cd ~/Projects/sitedesucesso"
