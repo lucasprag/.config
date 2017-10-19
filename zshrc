@@ -24,6 +24,7 @@ alias dotfiles="cd ~/.dotfiles"
 alias vimlociraptor="cd ~/.config/nvim"
 alias ex="cd ~/Projects/exercism"
 alias m="make"
+alias notes="cd ~/Dropbox/devnotes ; nvim \+NERDTreeToggle"
 
 # site de sucesso
 alias sitedesucesso="cd ~/Projects/sitedesucesso"
