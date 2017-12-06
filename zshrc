@@ -17,20 +17,27 @@ export SHELL=zsh
 alias compose="docker-compose"
 alias c="docker-compose" # even more pro
 alias cup="compose up"
-alias again="c build platform ; cup"
+
+alias dexec='_dexec(){ docker exec -ti $1 /bin/bash; }; _dexec'
+alias drmi='docker rmi $(docker images -a --filter=dangling=true -q)'
+alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
 
 # util
 alias dotfiles="cd ~/.dotfiles"
-alias vimlociraptor="cd ~/.config/nvim"
+alias vimlociraptor="cd ~/.config/nvim ; nvim \+NERDTreeToggle"
+alias notes="cd ~/Dropbox/devnotes ; nvim \+NERDTreeToggle"
 alias ex="cd ~/Projects/exercism"
 alias m="make"
-alias notes="cd ~/Dropbox/devnotes ; nvim \+NERDTreeToggle"
+alias n="nvim"
 
 # site de sucesso
 alias sitedesucesso="cd ~/Projects/sitedesucesso"
 
 # iugu
 alias iugu="cd ~/Projects/iugu"
+alias dep='docker exec -ti developmentstack_platform_1 /bin/bash'
+alias again="c build platform ; cup"
+alias dcp='_dexec(){ docker cp $1 developmentstack_platform_1:app/; }; _dexec'
 
 # labs
 alias labs="cd ~/Projects/labs"
