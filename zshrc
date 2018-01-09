@@ -30,8 +30,8 @@ alias ex="cd ~/Projects/exercism"
 alias m="make"
 alias n="nvim"
 
-# site de sucesso
-alias sitedesucesso="cd ~/Projects/sitedesucesso"
+# maple-labs
+alias maple="cd ~/Projects/maple-labs"
 
 # iugu
 alias iugu="cd ~/Projects/iugu"
