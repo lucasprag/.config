@@ -39,6 +39,9 @@ alias dep='docker exec -ti developmentstack_platform_1 /bin/bash'
 alias again="c build platform ; cup"
 alias dcp='_dexec(){ docker cp $1 developmentstack_platform_1:app/; }; _dexec'
 
+# devops
+alias k="kubectl"
+
 # labs
 alias labs="cd ~/Projects/labs"
 
