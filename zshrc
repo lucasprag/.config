@@ -49,6 +49,10 @@ alias labs="cd ~/Projects/labs"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# php
+alias poser="composer"
+alias p="poser"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
