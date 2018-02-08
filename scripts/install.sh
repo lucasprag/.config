@@ -20,3 +20,8 @@ curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/t
 
 # Iugu
 ln -sv ~/.dotfiles/tmuxinator/iugu.yml ~/.tmuxinator/iugu.yml
+
+# Spacemacs ?
+mv ~/.spacemacs ~/.spacemacs.original
+ln -sv ~/.dotfiles/spacemacs ~/.spacemacs
+
