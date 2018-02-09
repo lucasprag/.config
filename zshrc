@@ -68,3 +68,7 @@ export DISABLE_AUTO_TITLE=true
 
 # go
 export PATH=$PATH:/usr/local/go/bin
+
+# helpers - I don't know where save this
+# docker run --rm --userns host -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc
+
