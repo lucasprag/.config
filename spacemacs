@@ -316,6 +316,8 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq neo-theme 'nerd)
+  ;; avoid adding encoding utf8 to every single ruby file, thanks @andsnleo for the tip
+  (setq ruby-insert-encoding-magic-comment nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
