@@ -11,7 +11,6 @@ update:
 
 spacemacs:
 	rm -rf ~/.emacs*
-	mv ~/.spacemacs ~/.spacemacs.original
 	git clone git@github.com:syl20bnr/spacemacs.git ~/.emacs.d
 	$(LINKCOMMAND)/emacs/spacemacs ~/.spacemacs
 
