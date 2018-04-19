@@ -13,10 +13,12 @@ export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export SHELL=zsh
 
-# docker
+# devops
 alias compose="docker-compose"
 alias c="docker-compose" # even more pro
-alias cup="compose up"
+alias cup="compose up" # sometimes c up becomes cup
+alias k="kubectl"
+alias v="vagrant"
 
 alias dexec='_dexec(){ docker exec -ti $1 /bin/bash; }; _dexec'
 alias drmi='docker rmi $(docker images -a --filter=dangling=true -q)'
@@ -30,17 +32,10 @@ alias ex="cd ~/Projects/exercism"
 alias m="make"
 alias n="nvim"
 
+alias weather="curl -4 http://wttr.in"
+
 # maple-labs
 alias maple="cd ~/Projects/maple-labs"
-
-# iugu
-alias iugu="cd ~/Projects/iugu"
-alias dep='docker exec -ti developmentstack_platform_1 /bin/bash'
-alias again="c build platform ; cup"
-alias dcp='_dexec(){ docker cp $1 developmentstack_platform_1:app/; }; _dexec'
-
-# devops
-alias k="kubectl"
 
 # labs
 alias labs="cd ~/Projects/labs"
@@ -48,6 +43,10 @@ alias labs="cd ~/Projects/labs"
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# node
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
 
 # php
 alias poser="composer"
@@ -65,9 +64,6 @@ alias tmux="env TERM=xterm-256color tmux"
 # tmuxinator
 source ~/.dotfiles/tmuxinator/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
-
-# go
-export PATH=$PATH:/usr/local/go/bin
 
 # helpers - I don't know where save this
 # docker run --rm --userns host -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc
