@@ -10,7 +10,7 @@ plugins=(git rails ruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
-export EDITOR='nvim'
+export EDITOR='code --wait'
 export SHELL=zsh
 
 # devops
@@ -26,6 +26,7 @@ alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created 
 
 # util
 alias dotfiles="cd ~/.dotfiles"
+alias dotspacemacs="cd ~/.spacemacs.d"
 alias vimlociraptor="cd ~/.config/nvim ; nvim \+NERDTreeToggle"
 alias notes="cd ~/Dropbox/devnotes ; nvim \+NERDTreeToggle"
 alias ex="cd ~/Projects/exercism"
@@ -68,3 +69,7 @@ export DISABLE_AUTO_TITLE=true
 # helpers - I don't know where save this
 # docker run --rm --userns host -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc
 
+export SHOPIFY_API_KEY=63d791464e0594e2427d4f5fca0db9b1
+export SHOPIFY_SECRET_KEY=53e73c4fd7d833e0de7940db79d940f5
+
+eval "$(pipenv --completion)"
