@@ -10,7 +10,7 @@ plugins=(git rails ruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
-export EDITOR='code --wait'
+export EDITOR='nvim'
 export SHELL=zsh
 
 # devops
