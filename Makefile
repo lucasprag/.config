@@ -1,7 +1,7 @@
 # make my development environment
 
 # package manager
-PACMAN=sudo apt-get
+PACMAN=brew
 LINKCOMMAND=ln -sf ~/.dotfiles
 
 all: update ack zsh tmux neovim
