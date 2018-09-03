@@ -18,7 +18,6 @@ alias compose="docker-compose"
 alias c="docker-compose" # even more pro
 alias cup="compose up" # sometimes c up becomes cup
 alias k="kubectl"
-alias v="vagrant"
 
 alias dexec='_dexec(){ docker exec -ti $1 /bin/bash; }; _dexec'
 alias drmi='docker rmi $(docker images -a --filter=dangling=true -q)'
@@ -26,10 +25,9 @@ alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created 
 
 # util
 alias dotfiles="cd ~/.dotfiles"
-alias dotspacemacs="cd ~/.spacemacs.d"
+alias dotemacs="cd ~/.emacs.d"
 alias vimlociraptor="cd ~/.config/nvim ; nvim \+NERDTreeToggle"
 alias notes="cd ~/Dropbox/devnotes ; nvim \+NERDTreeToggle"
-alias ex="cd ~/Projects/exercism"
 alias m="make"
 alias n="nvim"
 
