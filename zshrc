@@ -18,26 +18,23 @@ alias compose="docker-compose"
 alias c="docker-compose" # even more pro
 alias cup="compose up" # sometimes c up becomes cup
 alias k="kubectl"
-
 alias dexec='_dexec(){ docker exec -ti $1 /bin/bash; }; _dexec'
 alias drmi='docker rmi $(docker images -a --filter=dangling=true -q)'
 alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
 
-# util
 alias dotfiles="cd ~/.dotfiles"
 alias dotemacs="cd ~/.emacs.d"
 alias vimlociraptor="cd ~/.config/nvim ; nvim \+NERDTreeToggle"
 alias notes="cd ~/Dropbox/devnotes ; nvim \+NERDTreeToggle"
+alias todo="cd ~/Dropbox/devnotes ; nvim todo.md"
 alias m="make"
 alias n="nvim"
 
 alias weather="curl -4 http://wttr.in"
 
-# maple-labs
-alias maple="cd ~/Projects/maple-labs"
-
-# labs
+alias fera="cd ~/Projects/fera"
 alias labs="cd ~/Projects/labs"
+alias maple="cd ~/Projects/maple-labs"
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -52,6 +49,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # dotfiles git functions
 export PATH="$HOME/.dotfiles/git:$PATH"
+export PATH="$PATH:/usr/local/bin"
+
 
 # true color for tmux
 alias tmux="env TERM=xterm-256color tmux"

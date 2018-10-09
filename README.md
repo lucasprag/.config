@@ -7,6 +7,7 @@ My personal dot files.
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [rbenv](https://github.com/rbenv/rbenv)
 - [ruby-build](https://github.com/rbenv/ruby-build#installing-as-an-rbenv-plugin-recommended)
+- [tmux](https://github.com/tmux/tmux/wiki)
 
 Thank you =)
 
