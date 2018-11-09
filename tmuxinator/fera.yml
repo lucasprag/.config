@@ -8,7 +8,7 @@ windows:
       layout: main-vertical
       panes:
         - ngrok http 3000 -subdomain=lucasprag
-        - zeus server
+        - zeus start
   - jobs: bi ; foreman start -f Procfile-WorkersOnly
   - web: bi ; zeus server
   - terminal: ruby --version #mailcatcher
