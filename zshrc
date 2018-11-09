@@ -31,10 +31,12 @@ alias m="make"
 alias n="nvim"
 
 alias weather="curl -4 http://wttr.in"
+alias rbenv-update='cd ~/.rbenv/plugins/ruby-build/ && git pull'
 
 alias fera="cd ~/Projects/fera"
 alias labs="cd ~/Projects/labs"
 alias maple="cd ~/Projects/maple-labs"
+alias wat="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -64,3 +66,7 @@ export DISABLE_AUTO_TITLE=true
 
 # python
 eval "$(pipenv --completion)"
+
+
+# API Keys and top secret stuff
+source ~/.private

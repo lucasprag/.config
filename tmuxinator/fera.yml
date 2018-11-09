@@ -1,13 +1,15 @@
 name: fera
 root: ~/Projects/fera/bananastand
-startup_window: editor
+startup_window: terminal
 tmux_options: -2
 
 windows:
-  - notes: todo
-  - ngrok: ngrok http 3000 -subdomain=lucasprag
-  - jobs: foreman start -f Procfile-WorkersOnly
-  - server: bundle exec rails server
-  - editor: ruby --version
-  - terminal: ruby --version
+  - ngrok:
+      layout: main-vertical
+      panes:
+        - ngrok http 3000 -subdomain=lucasprag
+        - zeus server
+  - jobs: bi ; foreman start -f Procfile-WorkersOnly
+  - web: bi ; zeus server
+  - terminal: ruby --version #mailcatcher
 
