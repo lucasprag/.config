@@ -10,7 +10,7 @@ plugins=(git rails ruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
-export EDITOR='nvim'
+export EDITOR='subl -w'
 export SHELL=zsh
 
 # devops
@@ -21,6 +21,8 @@ alias k="kubectl"
 alias dexec='_dexec(){ docker exec -ti $1 /bin/bash; }; _dexec'
 alias drmi='docker rmi $(docker images -a --filter=dangling=true -q)'
 alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
+alias zc='zeus console'
+alias zs='zeus server'
 
 alias dotfiles="cd ~/.dotfiles"
 alias dotemacs="cd ~/.emacs.d"
