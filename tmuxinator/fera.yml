@@ -4,12 +4,10 @@ startup_window: terminal
 tmux_options: -2
 
 windows:
-  - ngrok:
-      layout: main-vertical
-      panes:
-        - ngrok http 3000 -subdomain=lucasprag
-        - zeus start
+  - zeus: zeus start
+  - ngrok: ngrok http 3000 -subdomain=lucasprag
   - jobs: bi ; foreman start -f Procfile-WorkersOnly
   - web: bi ; zeus server
-  - terminal: ruby --version #mailcatcher
+  - console: bi ; zeus console
+  - terminal: mine . #mailcatcher
 
