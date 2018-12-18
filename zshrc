@@ -23,14 +23,16 @@ alias drmi='docker rmi $(docker images -a --filter=dangling=true -q)'
 alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
 alias zc='zeus console'
 alias zs='zeus server'
+alias zr='zeus rake'
 
 alias dotfiles="cd ~/.dotfiles"
 alias dotemacs="cd ~/.emacs.d"
 alias vimlociraptor="cd ~/.config/nvim ; nvim \+NERDTreeToggle"
-alias notes="cd ~/Dropbox/devnotes ; nvim \+NERDTreeToggle"
+alias notes="subl ~/Dropbox/devnotes"
 alias todo="cd ~/Dropbox/devnotes ; nvim todo.md"
 alias m="make"
 alias n="nvim"
+alias s="subl"
 
 alias weather="curl -4 http://wttr.in"
 alias rbenv-update='cd ~/.rbenv/plugins/ruby-build/ && git pull'
@@ -47,6 +49,12 @@ eval "$(rbenv init -)"
 # node
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
+
+# rails
+export WEBPACKER_DEV_SERVER_HOST=0.0.0.0
+
+# elixir
+alias pc="iex -S mix phx.server"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -72,3 +80,11 @@ eval "$(pipenv --completion)"
 
 # API Keys and top secret stuff
 source ~/.private
+
+
+# slow down sidekiq
+export SIDEKIQ_CONCURRENCY=1
+export CONCURRENCY_EVENT_NOTIFS=1
+export CONCURRENCY_EVENT_ORDER_PROCESS=1
+export CONCURRENCY_JOURNEYS=1
+
