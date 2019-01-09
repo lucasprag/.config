@@ -8,6 +8,7 @@ My personal dot files.
 - [rbenv](https://github.com/rbenv/rbenv)
 - [ruby-build](https://github.com/rbenv/ruby-build#installing-as-an-rbenv-plugin-recommended)
 - [tmux](https://github.com/tmux/tmux/wiki)
-
-Thank you =)
+- [tmuxinator](https://github.com/tmuxinator/tmuxinator)
+- [neovim](https://neovim.io)
+- [Sublime Text](https://www.sublimetext.com/)
 
