@@ -10,5 +10,5 @@ My personal dot files.
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 - [neovim](https://neovim.io)
-- [Sublime Text](https://www.sublimetext.com/)
+- [vimlociraptor](https://github.com/lucasprag/vimlociraptor)
 
