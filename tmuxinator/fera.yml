@@ -9,4 +9,5 @@ windows:
   - workers: bi ; foreman start -f Procfile-WorkersOnly
   - console: bi ; be rails c
   - terminal: mine . # mailcatcher
+  - labs: labs
 

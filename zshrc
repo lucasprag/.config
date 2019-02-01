@@ -10,7 +10,7 @@ plugins=(git rails ruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
-export EDITOR='nvim'
+export EDITOR='subl -w'
 export SHELL=zsh
 
 # devops
@@ -25,8 +25,7 @@ alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created 
 
 alias dotfiles="cd ~/.dotfiles"
 alias vimlociraptor="cd ~/.config/nvim ; nvim \+NERDTreeToggle"
-alias spacevim="cd ~/.SpaceVim ; nvim \+NERDTreeToggle"
-alias notes="nvim ~/Dropbox/devnotes"
+alias notes="cd ~/Dropbox/devnotes ; nvim \+NERDTreeToggle"
 alias todo="cd ~/Dropbox/devnotes ; nvim todo.md"
 alias m="make"
 alias n="nvim"
@@ -37,6 +36,7 @@ alias weather="curl -4 http://wttr.in"
 alias labs="cd ~/Projects/labs"
 alias maple="cd ~/Projects/maple-labs"
 alias wat="echo '¯\_(ツ)_/¯' | pbcopy"
+alias gcom="git checkout master"
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -48,6 +48,9 @@ export WEBPACKER_DEV_SERVER_HOST=0.0.0.0
 
 # elixir
 alias pc="iex -S mix phx.server"
+
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # node
 export PATH="$HOME/.nodenv/bin:$PATH"
@@ -79,7 +82,7 @@ export PATH="$PATH:/Users/lucasoliveira/.emacs.d/bin"
 source ~/.private
 
 # fera
-alias banana="cd ~/Projects/fera"
+alias banana="cd ~/Projects/fera/bananastand"
 #alias fera="~/projects/fera/fera/exe/fera"
 #eval $(fera completion_script)
 
