@@ -10,7 +10,7 @@ plugins=(git rails ruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
-export EDITOR='subl -w'
+export EDITOR='vim'
 export SHELL=zsh
 
 # devops
@@ -30,8 +30,7 @@ alias todo="cd ~/Dropbox/devnotes ; nvim todo.md"
 alias m="make"
 alias n="nvim"
 alias s="subl"
-
-alias weather="curl -4 http://wttr.in"
+alias e="emacs -nw"
 
 alias labs="cd ~/Projects/labs"
 alias maple="cd ~/Projects/maple-labs"

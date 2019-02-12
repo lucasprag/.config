@@ -6,7 +6,7 @@ tmux_options: -2
 windows:
   - ngrok: ngrok http 3000 -subdomain=lucasprag # -region=eu
   - web: bi ; be rails s
-  - workers: bi ; foreman start -f Procfile-WorkersOnly
+  - workers: # foreman start -f Procfile-WorkersOnly
   - console: bi ; be rails c
   - terminal: mine . # mailcatcher
   - labs: labs
