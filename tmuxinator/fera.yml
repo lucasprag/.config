@@ -9,5 +9,4 @@ windows:
   - workers: # foreman start -f Procfile-WorkersOnly
   - console: bi ; be rails c
   - terminal: mine . # mailcatcher
-  - labs: labs
-
+  - labs: open https://lucasprag.ngrok.io/ ; open https://ora.pm/project/11168/list/37044 ; open /Applications/Spotify.app ; open /Applications/Slack.app ; labs

@@ -10,7 +10,7 @@ plugins=(git rails ruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
-export EDITOR='vim'
+export EDITOR='nvim'
 export SHELL=zsh
 
 # devops
@@ -23,19 +23,17 @@ alias drmi='docker rmi $(docker images -a --filter=dangling=true -q)'
 alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
 # docker run --rm --userns host -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc
 
-alias dotfiles="cd ~/.dotfiles"
+alias dotfiles="cd ~/.dotfiles ; nvim \+NERDTreeToggle"
 alias vimlociraptor="cd ~/.config/nvim ; nvim \+NERDTreeToggle"
-alias notes="cd ~/Dropbox/devnotes ; nvim \+NERDTreeToggle"
-alias todo="cd ~/Dropbox/devnotes ; nvim todo.md"
-alias m="make"
+alias vim="nvim"
 alias n="nvim"
+alias m="make"
 alias s="subl"
-alias e="emacs -nw"
 
 alias labs="cd ~/Projects/labs"
 alias maple="cd ~/Projects/maple-labs"
 alias wat="echo '¯\_(ツ)_/¯' | pbcopy"
-alias gcom="git checkout master"
+alias hein="echo ❨╯°□°❩╯︵┻━┻ | pbcopy"
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -48,13 +46,6 @@ export WEBPACKER_DEV_SERVER_HOST=0.0.0.0
 # elixir
 alias pc="iex -S mix phx.server"
 
-# rust
-export PATH="$HOME/.cargo/bin:$PATH"
-
-# node
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -63,19 +54,11 @@ export PATH="$HOME/.dotfiles/git:$PATH"
 export PATH="$PATH:/usr/local/bin"
 
 # true color for tmux
-alias tmux="env TERM=xterm-256color tmux -2"
+# alias tmux="env TERM=xterm-256color tmux -2"
 
 # tmuxinator
 source ~/.dotfiles/tmuxinator/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
-
-# python
-eval "$(pipenv --completion)"
-
-# emacs
-alias dotemacs="cd ~/.emacs.d"
-alias dotdoom="cd ~/.doom.d"
-export PATH="$PATH:/Users/lucasoliveira/.emacs.d/bin"
 
 # top secret stuff
 source ~/.private
@@ -84,9 +67,3 @@ source ~/.private
 alias banana="cd ~/Projects/fera/bananastand"
 #alias fera="~/projects/fera/fera/exe/fera"
 #eval $(fera completion_script)
-
-# slow down sidekiq
-export SIDEKIQ_CONCURRENCY=1
-export CONCURRENCY_EVENT_NOTIFS=1
-export CONCURRENCY_EVENT_ORDER_PROCESS=1
-export CONCURRENCY_JOURNEYS=1
