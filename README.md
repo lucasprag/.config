@@ -12,3 +12,34 @@ My personal dot files.
 - [neovim](https://neovim.io)
 - [vimlociraptor](https://github.com/lucasprag/vimlociraptor)
 
+## Install
+
+```
+git clone git@github.com:lucasprag/dotfiles.git ~/.dotfiles
+
+# zsh
+
+brew install zsh
+mv ~/.zshrc ~/.zshrc.original
+ln -sf ~/.dotfiles/zshrc ~/.zshrc
+
+# ack
+brew install ack
+mv ~/.ackrc ~/.ackrc.original
+ln -sf ~/.dotfiles/ackrc ~/.ackrc
+
+# tmux
+brew install tmux
+mv ~/.tmux.conf ~/.tmux.conf.original
+ln -sf ~/.dotfiles/tmux.conf ~/.tmux.conf
+mkdir -p ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# mux
+curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh > ~/.dotfiles/tmuxinator/tmuxinator.zsh
+ln -sf ~/.dotfiles/tmuxinator ~/.tmuxinator
+
+# neovim
+brew install neovim
+
+```
