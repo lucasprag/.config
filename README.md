@@ -18,7 +18,6 @@ My personal dot files.
 git clone git@github.com:lucasprag/dotfiles.git ~/.dotfiles
 
 # zsh
-
 brew install zsh
 mv ~/.zshrc ~/.zshrc.original
 ln -sf ~/.dotfiles/zshrc ~/.zshrc
@@ -34,6 +33,7 @@ mv ~/.tmux.conf ~/.tmux.conf.original
 ln -sf ~/.dotfiles/tmux.conf ~/.tmux.conf
 mkdir -p ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# ctrl+b + I to install plugins
 
 # mux
 curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh > ~/.dotfiles/tmuxinator/tmuxinator.zsh
@@ -41,5 +41,9 @@ ln -sf ~/.dotfiles/tmuxinator ~/.tmuxinator
 
 # neovim
 brew install neovim
+
+# rubymine
+mv ~/.ideavimrc ~/.ideavimrc.original
+ln -sf ~/.dotfiles/ideavimrc ~/.ideavimrc
 
 ```

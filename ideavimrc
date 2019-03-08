@@ -1,0 +1,13 @@
+" =============================================================================
+" ideavim configuration for rubymine
+" =============================================================================
+
+set visualbell
+set noerrorbells
+
+
+" Save with Ctrl + s, so friends can use my vim
+map <C-s> :w<CR>
+map <C-q> :q<CR>
+map <C-a> :wqa<CR>
+
