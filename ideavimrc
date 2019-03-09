@@ -11,3 +11,5 @@ map <C-s> :w<CR>
 map <C-q> :q<CR>
 map <C-a> :wqa<CR>
 
+" copy with yank
+set clipboard+=unnamed
