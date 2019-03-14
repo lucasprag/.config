@@ -35,7 +35,7 @@ mkdir -p ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # ctrl+b + I to install plugins
 
-# mux
+# tmuxinator
 curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh > ~/.dotfiles/tmuxinator/tmuxinator.zsh
 ln -sf ~/.dotfiles/tmuxinator ~/.tmuxinator
 
@@ -45,5 +45,9 @@ brew install neovim
 # rubymine
 mv ~/.ideavimrc ~/.ideavimrc.original
 ln -sf ~/.dotfiles/ideavimrc ~/.ideavimrc
+
+# gemrc
+mv ~/.gemrc ~/.gemrc.original
+ln -s ~/.dotfiles/gemrc ~/.gemrc
 
 ```

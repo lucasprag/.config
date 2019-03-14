@@ -1,0 +1,9 @@
+name: wiki
+root: ~/Projects/maple-labs/wiki
+startup_window: editor
+tmux_options: -2
+
+windows:
+  - jekyll: be jekyll serve --watch
+  - editor: nvim \+NERDTreeToggle
+  - terminal:
