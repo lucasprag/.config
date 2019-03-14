@@ -1,7 +1,7 @@
 window:
-  decorations: transparent
+  decorations: buttonless # transparent
   padding:
-    top: 50 # hope =) https://github.com/jwilm/alacritty/issues/1671
+    top: 50 # will only work after https://github.com/jwilm/alacritty/issues/1671 I hope =)
 
 font:
   normal:
@@ -12,7 +12,7 @@ font:
     family: Roboto Mono for Powerline
     style: Bold
 
-  size: 13
+  size: 12
   use_thin_strokes: false
 
 key_bindings:
