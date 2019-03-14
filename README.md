@@ -50,4 +50,9 @@ ln -sf ~/.dotfiles/ideavimrc ~/.ideavimrc
 mv ~/.gemrc ~/.gemrc.original
 ln -s ~/.dotfiles/gemrc ~/.gemrc
 
+# alacritty
+mkdir -p ~/.config/alacritty
+mv ~/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.original.yml
+ln -s ~/.dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
+
 ```
