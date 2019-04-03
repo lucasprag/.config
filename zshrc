@@ -10,7 +10,7 @@ plugins=(git rails ruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
-export EDITOR='nvim'
+export EDITOR='code --wait'
 export SHELL=zsh
 
 # devops
@@ -23,8 +23,8 @@ alias drmi='docker rmi $(docker images -a --filter=dangling=true -q)'
 alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
 # docker run --rm --userns host -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc
 
-alias dotfiles="cd ~/.dotfiles ; nvim \+NERDTreeToggle"
-alias vimlociraptor="cd ~/.config/nvim ; nvim \+NERDTreeToggle"
+alias dotfiles="cd ~/.dotfiles"
+alias vimlociraptor="cd ~/.config/nvim"
 alias vim="nvim"
 alias n="nvim"
 alias m="make"
