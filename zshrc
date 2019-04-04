@@ -34,6 +34,7 @@ alias labs="cd ~/Projects/labs"
 alias maple="cd ~/Projects/maple-labs"
 alias wat="echo '¯\_(ツ)_/¯' | pbcopy"
 alias hein="echo ❨╯°□°❩╯︵┻━┻ | pbcopy"
+alias bro='echo igso-on | pbcopy'
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
