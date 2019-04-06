@@ -68,3 +68,6 @@ source ~/.private
 alias banana="cd ~/Projects/fera/bananastand"
 #alias fera="~/projects/fera/fera/exe/fera"
 #eval $(fera completion_script)
+
+# needed for homebrew
+export PATH="/usr/local/sbin:$PATH"
