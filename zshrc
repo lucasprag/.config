@@ -15,7 +15,7 @@ export SHELL=zsh
 
 # devops
 alias compose="docker-compose"
-alias c="docker-compose" # even more pro
+#alias c="docker-compose" # even more pro
 alias cup="compose up" # sometimes c up becomes cup
 alias k="kubectl"
 alias dexec='_dexec(){ docker exec -ti $1 /bin/bash; }; _dexec'
@@ -25,10 +25,12 @@ alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created 
 
 alias dotfiles="cd ~/.dotfiles"
 alias vimlociraptor="cd ~/.config/nvim"
+alias code="code-insiders"
 alias vim="nvim"
 alias n="nvim"
 alias m="make"
 alias s="subl"
+alias c="code-insiders"
 
 alias labs="cd ~/Projects/labs"
 alias maple="cd ~/Projects/maple-labs"
