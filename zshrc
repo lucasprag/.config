@@ -32,6 +32,8 @@ alias m="make"
 alias s="subl"
 alias c="code-insiders"
 
+alias weather="curl wttr.in"
+
 alias labs="cd ~/Projects/labs"
 alias maple="cd ~/Projects/maple-labs"
 alias wat="echo '¯\_(ツ)_/¯' | pbcopy"
