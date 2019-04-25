@@ -15,7 +15,7 @@ export SHELL=zsh
 
 # devops
 alias compose="docker-compose"
-#alias c="docker-compose" # even more pro
+alias c="docker-compose" # even more pro
 alias cup="compose up" # sometimes c up becomes cup
 alias k="kubectl"
 alias dexec='_dexec(){ docker exec -ti $1 /bin/bash; }; _dexec'
@@ -24,15 +24,19 @@ alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created 
 # docker run --rm --userns host -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc
 
 alias dotfiles="cd ~/.dotfiles"
+alias dotemacs="cd ~/.emacs.d"
+alias dotdoom="cd ~/.doom.d"
 alias vimlociraptor="cd ~/.config/nvim"
 alias code="code-insiders"
 alias vim="nvim"
 alias n="nvim"
 alias m="make"
 alias s="subl"
-alias c="code-insiders"
+#alias c="code-insiders"
+alias f="foreman"
 
 alias weather="curl wttr.in"
+alias clima="curl wttr.in" # pt-br
 
 alias labs="cd ~/Projects/labs"
 alias maple="cd ~/Projects/maple-labs"
@@ -73,5 +77,16 @@ alias banana="cd ~/Projects/fera/bananastand"
 #alias fera="~/projects/fera/fera/exe/fera"
 #eval $(fera completion_script)
 
+# smile
+alias smile="cd ~/Projects/smile"
+alias smile-api="cd ~/Projects/smile/api.sweettooth.io"
+alias smile-admin="cd ~/Projects/smile/smile-admin"
+
 # needed for homebrew
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/node@10/bin:$PATH"
+
+# doom
+export PATH="/Users/lucas/.emacs.d/bin:$PATH"
+
+

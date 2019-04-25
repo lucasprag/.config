@@ -1,0 +1,15 @@
+name: smile
+root: ~/Projects/smile/api.sweettooth.io
+startup_window: terminal
+tmux_options: -2
+
+windows:
+  - ngrok: ngrok start -config=.ngrok2/ngrok.yml --all
+  - ingestion: cd ../smile-data-ingestion-endpoints ; foreman start
+  - js: cd ../smile-js ; foreman start
+  - shopify: cd ../smile-shopify ; foreman start
+  - ui: cd ../smile-ui ; foreman start
+  - admin: cd ../smile-admin ; foreman start
+  - api: foreman start
+  - terminal: mine .
+  - labs: open /Applications/Spotify.app ; open /Applications/Slack.app ; labs
