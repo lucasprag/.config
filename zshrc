@@ -15,7 +15,7 @@ export SHELL=zsh
 
 # devops
 alias compose="docker-compose"
-alias c="docker-compose" # even more pro
+# alias c="docker-compose" # even more pro
 alias cup="compose up" # sometimes c up becomes cup
 alias k="kubectl"
 alias dexec='_dexec(){ docker exec -ti $1 /bin/bash; }; _dexec'
@@ -27,13 +27,14 @@ alias dotfiles="cd ~/.dotfiles"
 alias dotemacs="cd ~/.emacs.d"
 alias dotdoom="cd ~/.doom.d"
 alias vimlociraptor="cd ~/.config/nvim"
-alias code="code-insiders"
 alias vim="nvim"
 alias n="nvim"
 alias m="make"
 alias s="subl"
-#alias c="code-insiders"
+alias c="code"
 alias f="foreman"
+alias fr="foreman run"
+alias fs="foreman start"
 
 alias weather="curl wttr.in"
 alias clima="curl wttr.in" # pt-br
@@ -90,3 +91,4 @@ export PATH="/usr/local/opt/node@10/bin:$PATH"
 export PATH="/Users/lucas/.emacs.d/bin:$PATH"
 
 
+alias https='http --default-scheme=https'
