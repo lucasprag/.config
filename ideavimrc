@@ -6,10 +6,14 @@ set visualbell
 set noerrorbells
 
 
-" Save with Ctrl + s, so friends can use my vim
+" Save with Ctrl + s, so I can use rubymine
 map <C-s> :w<CR>
 map <C-q> :q<CR>
 map <C-a> :wqa<CR>
 
 " copy with yank
 set clipboard+=unnamed
+
+
+" ideavim extensions
+set multiple-cursors

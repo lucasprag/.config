@@ -35,12 +35,14 @@ alias c="code"
 alias f="foreman"
 alias fr="foreman run"
 alias fs="foreman start"
+alias t="foreman run rspec"
 
 alias weather="curl wttr.in"
 alias clima="curl wttr.in" # pt-br
 
 alias labs="cd ~/Projects/labs"
 alias maple="cd ~/Projects/maple-labs"
+alias grok="cd ~/Projects/grok/grok_talks"
 alias wat="echo '¯\_(ツ)_/¯' | pbcopy"
 alias hein="echo ❨╯°□°❩╯︵┻━┻ | pbcopy"
 alias bro='echo igso-on | pbcopy'

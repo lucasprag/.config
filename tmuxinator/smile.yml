@@ -5,12 +5,20 @@ tmux_options: -2
 
 windows:
   - ngrok: ngrok start -config=.ngrok2/ngrok.yml --all
-  - js: cd ../smile-js ; foreman start
-  - shopify: cd ../smile-shopify ; foreman start
-  - ui: cd ../smile-ui ; foreman start
-  - admin: cd ../smile-admin ; foreman start
-  - search: cd ../smile-search ; foreman start
+  - 'spotify/ui/js':
+      layout: even-vertical
+      orizontal
+      panes:
+        - cd ../smile-shopify ; git pull ; foreman start
+        - cd ../smile-ui ; git pull ; foreman start
+        - cd ../smile-js ; git pull ; foreman start
+  - 'admin/internal/search':
+      layout: even-vertical
+      panes:
+        - cd ../smile-admin ; git pull ; foreman start
+        - cd ../smile-internal ; git pull ; foreman start
+        - cd ../smile-search ; git pull ; foreman start
   - ingestion: cd ../smile-data-ingestion-endpoints ; foreman start
-  - api: foreman start
+  - api: compose up -d ; foreman start
   - terminal: mine .
   - labs: open /Applications/Spotify.app ; open /Applications/Slack.app ; open https://app.getflow.com/organizations/409350/teams/429245 ; labs
