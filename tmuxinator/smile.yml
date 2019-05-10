@@ -7,7 +7,6 @@ windows:
   - ngrok: ngrok start -config=.ngrok2/ngrok.yml --all
   - 'spotify/ui/js':
       layout: even-vertical
-      orizontal
       panes:
         - cd ../smile-shopify ; git pull ; foreman start
         - cd ../smile-ui ; git pull ; foreman start
