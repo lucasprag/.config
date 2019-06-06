@@ -14,6 +14,24 @@ map <C-a> :wqa<CR>
 " copy with yank
 set clipboard+=unnamed
 
+" map leader to space
+let mapleader = " "
+let g:mapleader = " "
+
+nmap <leader>u :action ShowUsages<cr>
+nmap <leader>r :action GotoRelated<cr>
+nmap <leader>d :action EditSource<cr>
+nmap ; :action RecentFiles<cr>
+
+
+" jump (required a plugin called KJump)
+nmap <leader>js :action KJumpAction<cr>
+nmap <leader>jw :action KJumpAction.Word0<cr>
+nmap <leader>jl :action KJumpAction.Line<cr>
+
+nmap <leader>jc :action KJumpAction.Char2<cr>
+nmap <leader>je :action KJumpAction.Word1<cr>
+
 
 " ideavim extensions
 set multiple-cursors
