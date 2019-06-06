@@ -27,6 +27,7 @@ alias dotfiles="cd ~/.dotfiles"
 alias dotemacs="cd ~/.emacs.d"
 alias dotdoom="cd ~/.doom.d"
 alias vimlociraptor="cd ~/.config/nvim"
+alias notes="cd ~/Dropbox/devnotes ; nvim notes.md"
 alias vim="nvim"
 alias n="nvim"
 alias m="make"
@@ -34,8 +35,9 @@ alias s="subl"
 alias c="code"
 alias f="foreman"
 alias fr="foreman run"
+alias frb="foreman run bundle exec"
 alias fs="foreman start"
-alias t="foreman run rspec"
+alias t="foreman run bundle exec rspec"
 
 alias weather="curl wttr.in"
 alias clima="curl wttr.in" # pt-br
@@ -88,9 +90,5 @@ alias smile-admin="cd ~/Projects/smile/smile-admin"
 # needed for homebrew
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
-
-# doom
-export PATH="/Users/lucas/.emacs.d/bin:$PATH"
-
 
 alias https='http --default-scheme=https'

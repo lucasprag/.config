@@ -17,7 +17,12 @@ windows:
         - cd ../smile-admin ; git pull ; foreman start
         - cd ../smile-internal ; git pull ; foreman start
         - cd ../smile-search ; git pull ; foreman start
-  - ingestion: cd ../smile-data-ingestion-endpoints ; foreman start
-  - api: compose up -d ; foreman start
+  #- web-analytics: cd ../smile-web-analytics ; foreman start
+  - ingestion/api:
+      layout: even-horizontal
+      -panes:
+        - cd ../smile-data-ingestion-endpoints ; foreman start
+        - compose up -d ; foreman start
+  - console: foreman run bundle exec rails console
   - terminal: mine .
-  - labs: open /Applications/Spotify.app ; open /Applications/Slack.app ; open https://app.getflow.com/organizations/409350/teams/429245 ; labs
+  - labs: open /Applications/Slack.app ; labs
