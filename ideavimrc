@@ -18,10 +18,14 @@ set clipboard+=unnamed
 let mapleader = " "
 let g:mapleader = " "
 
+" to get the available actions run :actionlist
+
+nmap ; :action RecentFiles<cr>
+
 nmap <leader>u :action ShowUsages<cr>
 nmap <leader>r :action GotoRelated<cr>
 nmap <leader>d :action EditSource<cr>
-nmap ; :action RecentFiles<cr>
+nmap <leader>r :action CopyReference<cr>
 
 
 " jump (required a plugin called KJump)
@@ -29,9 +33,15 @@ nmap <leader>js :action KJumpAction<cr>
 nmap <leader>jw :action KJumpAction.Word0<cr>
 nmap <leader>jl :action KJumpAction.Line<cr>
 
-nmap <leader>jc :action KJumpAction.Char2<cr>
-nmap <leader>je :action KJumpAction.Word1<cr>
+" move faster using Shift + j/k
+nmap <S-j> 10gj
+nmap <S-k> 10gk
 
 
 " ideavim extensions
 set multiple-cursors
+
+vmap <C-n> <Plug>NextWholeOccurrence
+vmap <C-p> <Plug>RemoveOccurrence
+vmap <C-k> <Plug>SkipOccurrence
+
