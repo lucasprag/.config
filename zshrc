@@ -38,6 +38,7 @@ alias fr="foreman run"
 alias frb="foreman run bundle exec"
 alias fs="foreman start"
 alias t="foreman run bundle exec rspec"
+alias push="git push origin master"
 
 alias weather="curl wttr.in"
 alias clima="curl wttr.in" # pt-br
