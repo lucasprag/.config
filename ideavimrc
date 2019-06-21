@@ -34,8 +34,8 @@ nmap <leader>jw :action KJumpAction.Word0<cr>
 nmap <leader>jl :action KJumpAction.Line<cr>
 
 " move faster using Shift + j/k
-nmap <C-j> 10gj
-nmap <C-k> 10gk
+"nmap <C-j> 10gj
+"nmap <C-k> 10gk
 
 " ideavim extensions
 set multiple-cursors
