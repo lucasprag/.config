@@ -25,12 +25,10 @@ alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created 
 
 alias dotfiles="cd ~/.dotfiles"
 alias dotemacs="cd ~/.emacs.d"
-alias dotdoom="cd ~/.doom.d"
 alias vimlociraptor="cd ~/.config/nvim"
 alias notes="cd ~/Dropbox/devnotes ; nvim notes.md"
 alias n="nvim"
 alias m="make"
-alias s="subl"
 alias c="code"
 alias f="foreman"
 alias fr="foreman run"
@@ -42,23 +40,26 @@ alias push="git push origin master"
 alias weather="curl wttr.in"
 alias clima="curl wttr.in" # pt-br
 
-alias labs="cd ~/Projects/labs"
-alias maple="cd ~/Projects/maple-labs"
-alias grok="cd ~/Projects/grok/grok_talks"
 alias wat="echo '¯\_(ツ)_/¯' | pbcopy"
 alias hein="echo ❨╯°□°❩╯︵┻━┻ | pbcopy"
 alias bro='echo igso-on | pbcopy'
+
+# elixir
+alias pc="iex -S mix phx.server"
+
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 alias rbenv-update='cd ~/.rbenv/plugins/ruby-build/ ; git pull ; cd -'
 
+
+alias labs="cd ~/Projects/labs"
+alias maple="cd ~/Projects/maple-labs"
+alias grok="cd ~/Projects/grok/grok_talks"
+
 # rails
 export WEBPACKER_DEV_SERVER_HOST=0.0.0.0
-
-# elixir
-alias pc="iex -S mix phx.server"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -92,3 +93,5 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 
 alias https='http --default-scheme=https'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

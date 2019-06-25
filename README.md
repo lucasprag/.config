@@ -17,10 +17,14 @@ My personal dot files.
 ```
 git clone git@github.com:lucasprag/dotfiles.git ~/.dotfiles
 
-# zsh
-brew install zsh
-mv ~/.zshrc ~/.zshrc.original
-ln -sf ~/.dotfiles/zshrc ~/.zshrc
+# fish
+mkdir -p ~/.config/fish
+mv ~/.config/fish ~/.config/fish_original
+ln -s ~/.dotfiles/fish ~/.config/fish
+
+# oh my fish
+mv ~/.config/omf ~/.config/omf_original
+ln -s ~/.dotfiles/omf ~/.config/omf
 
 # ack
 brew install ack
