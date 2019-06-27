@@ -68,6 +68,7 @@ abbr -a gp git push
 abbr -a gb git branch
 abbr -a ga git add
 abbr -a gd git diff
+abbr -a gl git lg
 
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)

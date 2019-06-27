@@ -60,4 +60,8 @@ mkdir -p ~/.config/alacritty
 mv ~/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.original.yml
 ln -s ~/.dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 
+
+# better git log -p
+git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+
 ```
