@@ -55,7 +55,7 @@ abbr -a smile-admin cd ~/Projects/smile/smile-admin
 abbr -a https http --default-scheme=https
 abbr -a weather curl wttr.in
 abbr -a clima curl wttr.in
-abbr -a wat "echo '¯\_\(ツ\)_/¯' | pbcopy"
+abbr -a wat "echo '¯\_(ツ)_/¯' | pbcopy"
 abbr -a hein "echo ❨╯°□°❩╯︵┻━┻ | pbcopy"
 abbr -a bro "echo igso-on | pbcopy"
 abbr -a mux tmuxinator
