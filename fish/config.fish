@@ -17,6 +17,11 @@ set -x PATH $PATH /usr/local/sbin
 ### Added by the Heroku Toolbelt
 set -x PATH "/usr/local/heroku/bin:$PATH"
 
+### needed for flask
+
+set -x FLASK_APP flaskr
+set -x FLASK_ENV development
+
 ## abbreviations
 abbr -a compose docker-compose
 abbr -a cup docker-compose up
@@ -38,18 +43,31 @@ abbr -a pc iex -S mix phx.server
 
 # ruby
 abbr -a rbenv-update "cd ~/.rbenv/plugins/ruby-build/ ; git pull ; cd -"
+abbr -a bi bundle install
+abbr -a be bundle exec
 
+# personal
 abbr -a labs cd ~/Projects/labs
 abbr -a maple cd ~/Projects/maple-labs
 abbr -a grok cd ~/Projects/grok/grok_talks
+abbr -a blog cd ~/Projects/grok/grokblog
+abbr -a shop cd ~/Projects/grok/grokshop
+abbr -a prag cd ~/Projects/grok/pragmatic-alchemist
+abbr -a igc cd ~/Projects/igc
 
 # fera
 abbr -a banana cd ~/Projects/fera/bananastand
 
 # smile
 abbr -a smile cd ~/Projects/smile
-abbr -a smile-api cd ~/Projects/smile/api.sweettooth.io
+abbr -a smile-core cd ~/Projects/smile/api.sweettooth.io
+abbr -a core cd ~/Projects/smile/api.sweettooth.io
 abbr -a smile-admin cd ~/Projects/smile/smile-admin
+abbr -a admin cd ~/Projects/smile/smile-admin
+abbr -a smile-rfcs cd ~/Projects/smile/rfcs
+abbr -a rfcs cd ~/Projects/smile/rfcs
+abbr -a smile-bi cd ~/Projects/smile/smile-bi
+abbr -a a tmux a -t
 
 # misc
 abbr -a https http --default-scheme=https
@@ -69,6 +87,8 @@ abbr -a gb git branch
 abbr -a ga git add
 abbr -a gd git diff
 abbr -a gl git lg
+abbr -a gu "git status -s | grep UU"
+abbr -a gr "git remote -v"
 
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)
