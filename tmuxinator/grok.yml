@@ -1,9 +1,9 @@
 name: grok
-root: ~/Projects/grok/grok_talks
-startup_window: terminal
+root: ~/Projects/grok/grokblog
+startup_window: editor
 tmux_options: -2
 
 windows:
-  - server: be rails s
-  - webpack: ./bin/webpack --watch --colors --progress
-  - terminal: mine .
+  - server: be jekyll serve --watch
+  - editor: echo editor
+  - terminal: echo terminal
