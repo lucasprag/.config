@@ -22,12 +22,17 @@ set -x PATH "/usr/local/heroku/bin:$PATH"
 set -x FLASK_APP flaskr
 set -x FLASK_ENV development
 
+### source secret stuff
+source ~/.private
+
 ## abbreviations
 abbr -a compose docker-compose
 abbr -a cup docker-compose up
 abbr -a dotfiles cd ~/.dotfiles
 abbr -a dotemacs cd ~/.emacs.d
+abbr -a emacses cd ~/Projects/emacses
 abbr -a vimlociraptor cd ~/.config/nvim
+abbr -a dotsublime cd ~/Library/Application\\ Support/Sublime\\ Text\\ 3/
 abbr -a notes cd ~/Dropbox/devnotes
 abbr -a n nvim
 abbr -a m make
@@ -60,13 +65,12 @@ abbr -a banana cd ~/Projects/fera/bananastand
 
 # smile
 abbr -a smile cd ~/Projects/smile
-abbr -a smile-core cd ~/Projects/smile/api.sweettooth.io
 abbr -a core cd ~/Projects/smile/api.sweettooth.io
-abbr -a smile-admin cd ~/Projects/smile/smile-admin
+abbr -a internal cd ~/Projects/smile/smile-internal
 abbr -a admin cd ~/Projects/smile/smile-admin
-abbr -a smile-rfcs cd ~/Projects/smile/rfcs
 abbr -a rfcs cd ~/Projects/smile/rfcs
-abbr -a smile-bi cd ~/Projects/smile/smile-bi
+abbr -a BI cd ~/Projects/smile/smile-bi
+abbr -a UI cd ~/Projects/smile/smile-ui
 abbr -a a tmux a -t
 
 # misc

@@ -1,5 +1,5 @@
 name: kwruby
-root: ~/Projects/maple-labs/kwruby.ca
+root: ~/Projects/kwruby.ca
 startup_window: editor
 tmux_options: -2
 
