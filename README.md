@@ -8,6 +8,8 @@ My personal dot files.
 - [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
 - [rbenv](https://github.com/rbenv/rbenv)
 - [ruby-build](https://github.com/rbenv/ruby-build#installing-as-an-rbenv-plugin-recommended)
+- [Alacritty](https://github.com/jwilm/alacritty)
+- [Hammerspoon](https://www.hammerspoon.org/)
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 - [neovim](https://neovim.io)
@@ -27,11 +29,6 @@ ln -s ~/.dotfiles/fish ~/.config/fish
 mv ~/.config/omf ~/.config/omf_original
 ln -s ~/.dotfiles/omf ~/.config/omf
 
-# ack
-brew install ack
-mv ~/.ackrc ~/.ackrc.original
-ln -sf ~/.dotfiles/ackrc ~/.ackrc
-
 # tmux
 brew install tmux
 mv ~/.tmux.conf ~/.tmux.conf.original
@@ -47,10 +44,6 @@ ln -sf ~/.dotfiles/tmuxinator ~/.tmuxinator
 # neovim
 brew install neovim
 
-# rubymine
-mv ~/.ideavimrc ~/.ideavimrc.original
-ln -sf ~/.dotfiles/ideavimrc ~/.ideavimrc
-
 # gemrc
 mv ~/.gemrc ~/.gemrc.original
 ln -s ~/.dotfiles/gemrc ~/.gemrc
@@ -62,5 +55,8 @@ ln -s ~/.dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 # better git log -p
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+
+# hammerspoon
+ln -s ~/.hammerspoon/ ~/.dotfiles/hammerspoon/
 
 ```
