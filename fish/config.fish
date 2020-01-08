@@ -27,16 +27,14 @@ source ~/.private
 
 ## abbreviations
 abbr -a compose docker-compose
+abbr -a c docker-compose
 abbr -a cup docker-compose up
 abbr -a dotfiles cd ~/.dotfiles
-abbr -a dotemacs cd ~/.emacs.d
-abbr -a emacses cd ~/Projects/emacses
 abbr -a vimlociraptor cd ~/.config/nvim
 abbr -a dotsublime cd ~/Library/Application\\ Support/Sublime\\ Text\\ 3/
 abbr -a notes cd ~/Dropbox/devnotes
 abbr -a n nvim
 abbr -a m make
-abbr -a c code
 abbr -a f foreman
 abbr -a fr foreman run
 abbr -a frb foreman run bundle exec
@@ -53,15 +51,9 @@ abbr -a be bundle exec
 
 # personal
 abbr -a labs cd ~/Projects/labs
-abbr -a maple cd ~/Projects/maple-labs
-abbr -a grok cd ~/Projects/grok/grok_talks
-abbr -a blog cd ~/Projects/grok/grokblog
-abbr -a shop cd ~/Projects/grok/grokshop
-abbr -a prag cd ~/Projects/grok/pragmatic-alchemist
+abbr -a grok cd ~/Projects/grokblog
+abbr -a blog cd ~/Projects/lucasprag
 abbr -a igc cd ~/Projects/igc
-
-# fera
-abbr -a banana cd ~/Projects/fera/bananastand
 
 # smile
 abbr -a smile cd ~/Projects/smile
