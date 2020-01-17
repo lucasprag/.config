@@ -18,7 +18,7 @@ set -x PATH $PATH /usr/local/sbin
 set -x PATH "/usr/local/heroku/bin:$PATH"
 
 ### needed for flask
-
+set -x PYTHON /usr/local/bin/python3
 set -x FLASK_APP flaskr
 set -x FLASK_ENV development
 
@@ -30,6 +30,7 @@ abbr -a compose docker-compose
 abbr -a c docker-compose
 abbr -a cup docker-compose up
 abbr -a dotfiles cd ~/.dotfiles
+abbr -a dotemacs cd ~/.emacs.d
 abbr -a vimlociraptor cd ~/.config/nvim
 abbr -a dotsublime cd ~/Library/Application\\ Support/Sublime\\ Text\\ 3/
 abbr -a notes cd ~/Dropbox/devnotes
@@ -86,11 +87,11 @@ abbr -a gl git lg
 abbr -a gu "git status -s | grep UU"
 abbr -a gr "git remote -v"
 abbr -a gpick "git cherry-pick"
+abbr -a grmu "git status -s | awk '{ print $2 }' | xargs rm"
 
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)
 
 set -gx VOLTA_HOME "$HOME/.volta"
 test -s "$VOLTA_HOME/load.fish"; and source "$VOLTA_HOME/load.fish"
-
 string match -r ".volta" "$PATH" > /dev/null; or set -gx PATH "$VOLTA_HOME/bin" $PATH
