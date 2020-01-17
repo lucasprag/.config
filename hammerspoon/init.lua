@@ -2,7 +2,7 @@
 -- Setup environment
 -- -----------------
 
--- Animation off, mofo 
+-- Animation off, turn on speed
 hs.window.animationDuration = 0
 
 -- Get list of screens and refresh that list whenever screens are (un)plugged
@@ -16,6 +16,7 @@ screenwatcher:start()
 local hyper = {"⌥", "⇧"}
 local alt = {"⌥"}
 local pushkey = {"⌃", "⌘"}
+local pushShiftkey = {"⌃", "⌘", "⇧"}
 
 -- Tracking variables
 local pressed = {
@@ -26,7 +27,7 @@ local pressed = {
 }
 
 -- Full screen sizes
-local fullScreenSizeIndex = 0 
+local fullScreenSizeIndex = 0
 local fullScreenSizes = {
     { x = 0.00, y = 0.00, w = 1.0, h = 1.0 },
     { x = 0.05, y = 0.05, w = 0.9, h = 0.9 },
@@ -61,7 +62,9 @@ end
 function pushT()  push(0.0, 0.0, 1.0, 0.5) end
 function pushB()  push(0.0, 0.5, 1.0, 0.5) end
 function pushL()  push(0.0, 0.0, 0.5, 1.0) end
+function pushSL() push(0.0, 0.0, 0.8, 1.0) end
 function pushR()  push(0.5, 0.0, 0.5, 1.0) end
+function pushSR() push(0.2, 0.0, 0.8, 1.0) end
 function pushTL() push(0.0, 0.0, 0.5, 0.5) end
 function pushTR() push(0.5, 0.0, 0.5, 0.5) end
 function pushBL() push(0.0, 0.5, 0.5, 0.5) end
@@ -83,43 +86,53 @@ end
 -- Window management
 -- -----------------
 
--- Push to left (including top left and bottom left) 
+-- Push to left (including top left and bottom left)
 hs.hotkey.bind(pushkey, "left", function()
     pressed.left = true
-    if pressed.up then 
-        pushTL() 
-    elseif pressed.down then 
+    if pressed.up then
+        pushTL()
+    elseif pressed.down then
         pushBL()
-    else 
+    else
         pushL()
     end
-end, function () 
-    pressed.left = false    
+end, function ()
+    pressed.left = false
+end)
+
+-- Push to left but larger
+hs.hotkey.bind(pushShiftkey, "left", function()
+    pushSL()
 end)
 
 -- Push to right (including top right and bottom right)
-hs.hotkey.bind(pushkey, "right", function() 
+hs.hotkey.bind(pushkey, "right", function()
     pressed.right = true
-    if pressed.up then 
-        pushTR() 
+    if pressed.up then
+        pushTR()
     elseif pressed.down then
-        pushBR() 
+        pushBR()
     else
-        pushR() 
+        pushR()
     end
 end, function()
     pressed.right = false
+end)
+
+-- Push to right but larger
+hs.hotkey.bind(pushShiftkey, "right", function()
+  pushSR()
 end)
 
 -- Push to top (including top right and top left)
 hs.hotkey.bind(pushkey, "up", function()
     pressed.up = true
     if pressed.left then
-        pushTL() 
+        pushTL()
     elseif pressed.right then
         pushTR()
     else
-        pushT() 
+        pushT()
     end
 end, function()
     pressed.up = false
@@ -129,13 +142,13 @@ end)
 hs.hotkey.bind(pushkey, "down", function()
     pressed.down = true
     if pressed.left then
-        pushBL() 
+        pushBL()
     elseif pressed.right then
-        pushBR() 
+        pushBR()
     else
         pushB()
     end
-end, function() 
+end, function()
     pressed.down = false
 end)
 
@@ -163,7 +176,7 @@ end)
 -- -------------
 
 -- Cycle through "full" screen sizes
-hs.hotkey.bind(pushkey, "f", function() 
+hs.hotkey.bind(pushkey, "f", function()
     fullScreenSizeIndex = fullScreenSizeIndex + 1
     if fullScreenSizeIndex > #fullScreenSizes then fullScreenSizeIndex = 1 end
     size = fullScreenSizes[fullScreenSizeIndex]
@@ -183,7 +196,6 @@ appmode = hs.hotkey.modal.new({"cmd"}, "E")
 appmode:bind({}, "B", function() hs.application.launchOrFocus("Google Chrome") appmode:exit() end)
 appmode:bind({}, "C", function() hs.application.launchOrFocus("Calendar") appmode:exit() end)
 appmode:bind({}, "D", function() hs.application.launchOrFocus("Postico") appmode:exit() end)
-appmode:bind({}, "E", function() hs.application.launchOrFocus("Visual Studio Code") appmode:exit() end)
 appmode:bind({}, "S", function() hs.application.launchOrFocus("Slack") appmode:exit() end)
 appmode:bind({}, "T", function() hs.application.launchOrFocus("Alacritty") appmode:exit() end)
 
