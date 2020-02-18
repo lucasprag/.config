@@ -27,7 +27,7 @@ source ~/.private
 
 ## abbreviations
 abbr -a compose docker-compose
-abbr -a c docker-compose
+abbr -a c code
 abbr -a cup docker-compose up
 abbr -a dotfiles cd ~/.dotfiles
 abbr -a dotemacs cd ~/.emacs.d
@@ -41,6 +41,8 @@ abbr -a fr foreman run
 abbr -a frb foreman run bundle exec
 abbr -a fs foreman start
 abbr -a t foreman run bundle exec rspec
+abbr -a p foreman run bundle exec puma -C ./config/puma.rb
+abbr -a e ember
 
 # elixir
 abbr -a pc iex -S mix phx.server
@@ -58,7 +60,7 @@ abbr -a igc cd ~/Projects/igc
 
 # smile
 abbr -a smile cd ~/Projects/smile
-abbr -a core cd ~/Projects/smile/api.sweettooth.io
+abbr -a core cd ~/Projects/smile/smile-core
 abbr -a internal cd ~/Projects/smile/smile-internal
 abbr -a admin cd ~/Projects/smile/smile-admin
 abbr -a rfcs cd ~/Projects/smile/rfcs

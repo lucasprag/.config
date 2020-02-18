@@ -1,10 +1,11 @@
 name: smile
-root: ~/Projects/smile/api.sweettooth.io
-startup_window: terminal
+root: ~/Projects/smile/smile-core
+startup_window: editor
 tmux_options: -2
 
 windows:
   - ingestion: cd ../smile-data-ingestion-endpoints ; sleep 5 ; foreman start
   - core: compose up -d ; sleep 5 ; foreman start
+  - editor: echo '☕️'
   - console: foreman run bundle exec rails console
-  - terminal: code ; open /Applications/Spotify.app ; open /Applications/Slack.app ; echo '☕️'
+  - terminal: open /Applications/Spotify.app ; open /Applications/Slack.app
