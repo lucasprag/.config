@@ -22,6 +22,13 @@ set -x PYTHON /usr/local/bin/python3
 set -x FLASK_APP flaskr
 set -x FLASK_ENV development
 
+### android
+set -x ANDROID_HOME $HOME/Library/Android/sdk
+set -x PATH $PATH:$ANDROID_HOME/emulator
+set -x PATH $PATH:$ANDROID_HOME/tools
+set -x PATH $PATH:$ANDROID_HOME/tools/bin
+set -x PATH $PATH:$ANDROID_HOME/platform-tools
+
 ### source secret stuff
 source ~/.private
 
@@ -43,6 +50,7 @@ abbr -a fs foreman start
 abbr -a t foreman run bundle exec rspec
 abbr -a p foreman run bundle exec puma -C ./config/puma.rb
 abbr -a e ember
+abbr -a fn "fzf | xargs nvim"
 
 # elixir
 abbr -a pc iex -S mix phx.server
@@ -74,6 +82,7 @@ abbr -a weather curl wttr.in
 abbr -a clima curl wttr.in
 abbr -a wat "echo '¯\_(ツ)_/¯' | pbcopy"
 abbr -a hein "echo ❨╯°□°❩╯︵┻━┻ | pbcopy"
+abbr -a shit "echo ┻━┻︵ \(°□°)/ ︵ ┻━┻ | pbcopy"
 abbr -a bro "echo igso-on | pbcopy"
 abbr -a mux tmuxinator
 

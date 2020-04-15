@@ -1,5 +1,5 @@
-name: grok
-root: ~/Projects/grok/grokblog
+name: ipb
+root: ~/Projects/ipbpedronunes
 startup_window: editor
 tmux_options: -2
 

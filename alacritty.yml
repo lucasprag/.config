@@ -12,7 +12,7 @@ font:
     family: Roboto Mono for Powerline
     style: Bold
 
-  size: 13
+  size: 11
   use_thin_strokes: false
 
 key_bindings:
