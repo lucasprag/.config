@@ -19,8 +19,8 @@ set -x PATH "/usr/local/heroku/bin:$PATH"
 
 ### needed for flask
 set -x PYTHON /usr/local/bin/python3
-set -x FLASK_APP flaskr
-set -x FLASK_ENV development
+alias python python3
+alias pip pip3
 
 ### android
 set -x ANDROID_HOME $HOME/Library/Android/sdk
@@ -51,6 +51,7 @@ abbr -a t foreman run bundle exec rspec
 abbr -a p foreman run bundle exec puma -C ./config/puma.rb
 abbr -a e ember
 abbr -a fn "fzf | xargs nvim"
+abbr -a r "omf reload"
 
 # elixir
 abbr -a pc iex -S mix phx.server
@@ -99,6 +100,8 @@ abbr -a gu "git status -s | grep UU"
 abbr -a gr "git remote -v"
 abbr -a gpick "git cherry-pick"
 abbr -a grmu "git status -s | awk '{ print $2 }' | xargs rm"
+abbr -a gp 'git pull origin (current_branch)'
+abbr -a gP 'git push origin (current_branch)'
 
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)
