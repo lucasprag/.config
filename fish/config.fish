@@ -35,7 +35,8 @@ source ~/.private
 ## abbreviations
 abbr -a compose docker-compose
 abbr -a c code
-abbr -a cup docker-compose up
+abbr -a cup docker-compose up -d
+abbr -a cs docker-compose stop
 abbr -a dotfiles cd ~/.dotfiles
 abbr -a dotemacs cd ~/.emacs.d
 abbr -a vimlociraptor cd ~/.config/nvim
@@ -54,7 +55,7 @@ abbr -a fn "fzf | xargs nvim"
 abbr -a r "omf reload"
 
 # elixir
-abbr -a pc iex -S mix phx.server
+abbr -a pc "iex -S mix phx.server"
 
 # ruby
 abbr -a rbenv-update "cd ~/.rbenv/plugins/ruby-build/ ; git pull ; cd -"
