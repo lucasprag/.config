@@ -60,7 +60,7 @@ git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(ye
 ln -s ~/.hammerspoon/ ~/.dotfiles/hammerspoon/
 
 # make typing great again -- re-pair bluetooth keyboard required to make it work
-defaults write -g InitialKeyRepeat -int 10
+defaults write -g InitialKeyRepeat -int 13
 defaults write -g KeyRepeat -int 1
 
 

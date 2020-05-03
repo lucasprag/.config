@@ -1,0 +1,10 @@
+name: igc
+root: ~/Projects/igc
+startup_window: editor
+tmux_options: -2
+
+windows:
+  - server: pipenv run flask run
+  - assets: cd assets; yarn watch
+  - editor: echo editor
+  - terminal: echo terminal
