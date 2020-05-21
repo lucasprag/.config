@@ -34,12 +34,15 @@ source ~/.private
 
 ## abbreviations
 abbr -a compose docker-compose
-abbr -a c code
+abbr -a code code-insiders
+abbr -a c code-insiders
+abbr -a s subl
 abbr -a cup docker-compose up -d
 abbr -a cs docker-compose stop
 abbr -a dotfiles cd ~/.dotfiles
 abbr -a dotemacs cd ~/.emacs.d
 abbr -a vimlociraptor cd ~/.config/nvim
+abbr -a simpleblack cd ~/.config/nvim/plugged/simpleblack
 abbr -a dotsublime cd ~/Library/Application\\ Support/Sublime\\ Text\\ 3/
 abbr -a notes cd ~/Dropbox/devnotes
 abbr -a n nvim
@@ -67,6 +70,7 @@ abbr -a labs cd ~/Projects/labs
 abbr -a grok cd ~/Projects/grokblog
 abbr -a blog cd ~/Projects/lucasprag
 abbr -a igc cd ~/Projects/igc
+abbr -a ipb cd ~/Projects/ipbpedronunes
 
 # smile
 abbr -a smile cd ~/Projects/smile
