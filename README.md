@@ -25,10 +25,6 @@ mkdir -p ~/.config/fish
 mv ~/.config/fish ~/.config/fish_original
 ln -s ~/.dotfiles/fish ~/.config/fish
 
-# oh my fish
-mv ~/.config/omf ~/.config/omf_original
-ln -s ~/.dotfiles/omf ~/.config/omf
-
 # tmux
 brew install tmux
 mv ~/.tmux.conf ~/.tmux.conf.original
@@ -62,6 +58,4 @@ ln -s ~/.hammerspoon/ ~/.dotfiles/hammerspoon/
 # make typing great again -- re-pair bluetooth keyboard required to make it work
 defaults write -g InitialKeyRepeat -int 13
 defaults write -g KeyRepeat -int 1
-
-
 ```

@@ -44,19 +44,10 @@ alias wat="echo '¯\_(ツ)_/¯' | pbcopy"
 alias hein="echo ❨╯°□°❩╯︵┻━┻ | pbcopy"
 alias bro='echo igso-on | pbcopy'
 
-# elixir
-alias pc="iex -S mix phx.server"
-
-
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 alias rbenv-update='cd ~/.rbenv/plugins/ruby-build/ ; git pull ; cd -'
-
-
-alias labs="cd ~/Projects/labs"
-alias maple="cd ~/Projects/maple-labs"
-alias grok="cd ~/Projects/grok/grok_talks"
 
 # rails
 export WEBPACKER_DEV_SERVER_HOST=0.0.0.0
@@ -64,8 +55,6 @@ export WEBPACKER_DEV_SERVER_HOST=0.0.0.0
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# dotfiles git functions
-export PATH="$HOME/.dotfiles/git:$PATH"
 export PATH="$PATH:/usr/local/bin"
 
 # true color for tmux
@@ -77,16 +66,6 @@ export DISABLE_AUTO_TITLE=true
 
 # top secret stuff
 source ~/.private
-
-# fera
-alias banana="cd ~/Projects/fera/bananastand"
-#alias fera="~/projects/fera/fera/exe/fera"
-#eval $(fera completion_script)
-
-# smile
-alias smile="cd ~/Projects/smile"
-alias smile-api="cd ~/Projects/smile/api.sweettooth.io"
-alias smile-admin="cd ~/Projects/smile/smile-admin"
 
 # needed for homebrew
 export PATH="/usr/local/sbin:$PATH"
