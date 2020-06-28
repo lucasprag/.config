@@ -25,6 +25,10 @@ mkdir -p ~/.config/fish
 mv ~/.config/fish ~/.config/fish_original
 ln -s ~/.dotfiles/fish ~/.config/fish
 
+# oh my fish
+~/.config/omf/ ~/.config/omf.original
+ln -s ~/.dotfiles/omf/ ~/.config/omf
+
 # tmux
 brew install tmux
 mv ~/.tmux.conf ~/.tmux.conf.original
@@ -53,9 +57,12 @@ ln -s ~/.dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
 # hammerspoon
-ln -s ~/.hammerspoon/ ~/.dotfiles/hammerspoon/
+ln -s ~/.dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua
 
 # make typing great again -- re-pair bluetooth keyboard required to make it work
 defaults write -g InitialKeyRepeat -int 13
 defaults write -g KeyRepeat -int 1
+
+# install macos apps
+brew cask install spotify iterm2 postico sublime-text keepingyouawake
 ```
