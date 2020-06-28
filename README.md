@@ -6,9 +6,9 @@ My personal dot files.
 
 - [fish](https://fishshell.com/)
 - [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
-- [rbenv](https://github.com/rbenv/rbenv)
-- [ruby-build](https://github.com/rbenv/ruby-build#installing-as-an-rbenv-plugin-recommended)
+- [Powerline fonts](https://github.com/powerline/fonts)
 - [Alacritty](https://github.com/jwilm/alacritty)
+- [asdf](https://github.com/asdf-vm/asdf), [asdf-ruby](https://github.com/asdf-vm/asdf-ruby), [asdf-elixir](https://github.com/asdf-vm/asdf-elixir), etc.
 - [Hammerspoon](https://www.hammerspoon.org/)
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator)
@@ -64,5 +64,5 @@ defaults write -g InitialKeyRepeat -int 13
 defaults write -g KeyRepeat -int 1
 
 # install macos apps
-brew cask install spotify iterm2 postico sublime-text keepingyouawake
+brew cask install spotify iterm2 postico sublime-text keepingyouawake alacritty
 ```

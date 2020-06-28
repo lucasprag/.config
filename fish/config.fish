@@ -61,7 +61,7 @@ abbr -a r "omf reload"
 abbr -a pc "iex -S mix phx.server"
 
 # ruby
-abbr -a rbenv-update "cd ~/.rbenv/plugins/ruby-build/ ; git pull ; cd -"
+#abbr -a rbenv-update "cd ~/.rbenv/plugins/ruby-build/ ; git pull ; cd -"
 abbr -a bi bundle install
 abbr -a be bundle exec
 
@@ -108,9 +108,25 @@ abbr -a grmu "git status -s | awk '{ print $2 }' | xargs rm"
 abbr -a gp 'git pull origin (current_branch)'
 abbr -a gP 'git push origin (current_branch)'
 
-# rbenv
-status --is-interactive; and source (rbenv init -|psub)
 
-set -gx VOLTA_HOME "$HOME/.volta"
-test -s "$VOLTA_HOME/load.fish"; and source "$VOLTA_HOME/load.fish"
-string match -r ".volta" "$PATH" > /dev/null; or set -gx PATH "$VOLTA_HOME/bin" $PATH
+### Personal
+if test (uname -n) = panelavelha.local
+
+  # asdf
+  source ~/.asdf/asdf.fish
+
+### Work @ Smile
+else if test (uname -n) = smile-lucas.local 
+
+  # rbenv
+  status --is-interactive; and source (rbenv init -|psub)
+
+  # volta.sh
+  set -gx VOLTA_HOME "$HOME/.volta"
+  test -s "$VOLTA_HOME/load.fish"; and source "$VOLTA_HOME/load.fish"
+  string match -r ".volta" "$PATH" > /dev/null; or set -gx PATH "$VOLTA_HOME/bin" $PATH
+
+else
+  echo "Something is wrong with your configs!"
+end
+
