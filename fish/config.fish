@@ -113,15 +113,16 @@ abbr -a gP 'git push origin (current_branch)'
 
 
 ### Personal
-if test (uname -n) = panelavelha.local
+if string match -r 'panelavelha' (uname -n) > /dev/null
 
   # asdf
   source ~/.asdf/asdf.fish
 
 ### Work @ Smile
-else if test (uname -n) = smile-lucas.local 
+else if string match -r 'smile-lucas' (uname -n) > /dev/null
 
   # rbenv
+  set -Ux fish_user_paths $HOME/.rbenv/bin $fish_user_paths
   status --is-interactive; and source (rbenv init -|psub)
 
   # volta.sh
@@ -130,6 +131,6 @@ else if test (uname -n) = smile-lucas.local
   string match -r ".volta" "$PATH" > /dev/null; or set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 else
-  echo "Something is wrong with your configs!"
+  echo "Something is wrong with your configs Lucas!"
 end
 
