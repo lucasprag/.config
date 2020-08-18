@@ -26,8 +26,8 @@ mv ~/.config/fish ~/.config/fish_original
 ln -s ~/.dotfiles/fish ~/.config/fish
 
 # oh my fish
-~/.config/omf/ ~/.config/omf.original
-ln -s ~/.dotfiles/omf/ ~/.config/omf
+mv ~/.config/omf/ ~/.config/omf.original
+ln -s ~/.dotfiles/omf ~/.config/omf
 
 # tmux
 brew install tmux

@@ -23,11 +23,11 @@ alias python python3
 alias pip pip3
 
 ### android
-set -x ANDROID_HOME $HOME/Library/Android/sdk
-set -x PATH $PATH:$ANDROID_HOME/emulator
-set -x PATH $PATH:$ANDROID_HOME/tools
-set -x PATH $PATH:$ANDROID_HOME/tools/bin
-set -x PATH $PATH:$ANDROID_HOME/platform-tools
+#set -x ANDROID_HOME $HOME/Library/Android/sdk
+#set -x PATH $PATH:$ANDROID_HOME/emulator
+#set -x PATH $PATH:$ANDROID_HOME/tools
+#set -x PATH $PATH:$ANDROID_HOME/tools/bin
+#set -x PATH $PATH:$ANDROID_HOME/platform-tools
 
 ### source secret stuff
 source ~/.private
@@ -116,6 +116,12 @@ abbr -a gP 'git push origin (current_branch)'
 if string match -r 'panelavelha' (uname -n) > /dev/null
 
   # asdf
+  source ~/.asdf/asdf.fish
+
+### Personal Ubuntu
+else if string match -r 'frankenstein'  (uname -n) > /dev/null
+
+  # asdf -- installation via git
   source ~/.asdf/asdf.fish
 
 ### Work @ Smile
