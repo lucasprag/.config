@@ -2,6 +2,7 @@
 #  fish configuration
 ###########################
 
+#if status --is-login
 set -x LANG en_US.UTF-8
 set -x EDITOR 'nvim'
 set -x SHELL fish
@@ -112,7 +113,7 @@ abbr -a gp 'git pull origin (current_branch)'
 abbr -a gP 'git push origin (current_branch)'
 
 
-### Personal
+### Personal Mac
 if string match -r 'panelavelha' (uname -n) > /dev/null
 
   # asdf
@@ -125,10 +126,10 @@ else if string match -r 'frankenstein'  (uname -n) > /dev/null
   source ~/.asdf/asdf.fish
 
 ### Work @ Smile
-else if string match -r 'smile-lucas' (uname -n) > /dev/null
+else if string match -r 'smile-lucas' (uname -n) > /dev/null; or string match -r 'ec2' (uname -n) > /dev/null
 
   # rbenv
-  set -Ux fish_user_paths $HOME/.rbenv/bin $fish_user_paths
+  # way faster than asdf to load in my work computer ¯\_(ツ)_/¯
   status --is-interactive; and source (rbenv init -|psub)
 
   # volta.sh
