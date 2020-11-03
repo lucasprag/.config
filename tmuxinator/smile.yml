@@ -4,6 +4,7 @@ startup_window: editor
 tmux_options: -2
 
 windows:
+  - docker: cd ../dev-env-services ; docker-compose up -d
   - ingestion: cd ../smile-data-ingestion-endpoints ; sleep 5 ; foreman start
   - core: compose up -d ; sleep 5 ; foreman start
   - editor: echo '☕️'
