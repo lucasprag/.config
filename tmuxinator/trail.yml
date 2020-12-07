@@ -1,0 +1,9 @@
+name: trail
+root: ~/Projects/trail_feed
+startup_window: editor
+tmux_options: -2
+
+windows:
+  - server: iex -S mix phx.server
+  - editor: echo editor
+  - terminal: echo terminal
