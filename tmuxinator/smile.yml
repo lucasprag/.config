@@ -5,8 +5,8 @@ tmux_options: -2
 
 windows:
   - docker: cd ../dev-env-services ; docker-compose up -d
-  - ingestion: cd ../smile-data-ingestion-endpoints ; sleep 5 ; foreman start
-  - core: compose up -d ; sleep 5 ; foreman start
+  - ingestion: cd ../smile-data-ingestion-endpoints ; echo ingestion
+  - core: echo core
   - editor: echo '☕️'
   - console: foreman run bundle exec rails console
   - terminal: open /Applications/Spotify.app ; open /Applications/Slack.app

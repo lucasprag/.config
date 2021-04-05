@@ -1,7 +1,9 @@
-window:
-  # decorations: transparent buttonless
-  padding:
-    top: 50 # will only work after https://github.com/jwilm/alacritty/issues/1671 I hope =)
+#window:
+  # decorations: buttonless
+  # padding:
+    # top: 50 # will only work after https://github.com/jwilm/alacritty/issues/1671 I hope =)
+    # x: 5
+    # y: 5
 
 font:
   normal:
