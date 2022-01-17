@@ -5,12 +5,9 @@ tmux_options: -2
 
 windows:
   - ngrok: ngrok start -config=smile-core/.ngrok2/ngrok.yml --all
-  #- shopify: cd smile-shopify ; git pull ; yarn ; foreman start
-  #- bigc: cd smile-bigcommerce ; git pull ; yarn ; foreman start
   - smile-ui: cd smile-ui ; git pull ; yarn ; foreman start
-  #- js: cd smile-js ; git pull ; yarn ; foreman start
   - admin: cd smile-admin ; git pull ; yarn ; foreman start
   - internal: cd smile-internal ; git pull ; yarn ; foreman start
-  - search: cd smile-search ; git pull ; foreman start
+  #- search: cd smile-search ; git pull ; foreman start
   #- web-analytics: cd ../smile-web-analytics ; foreman start
   - terminal: echo '☕️'
