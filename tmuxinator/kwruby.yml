@@ -5,5 +5,5 @@ tmux_options: -2
 
 windows:
   - jekyll: be middleman
-  - editor: nvim \+NERDTreeToggle
+  - editor: echo '☕️'
   - terminal:

@@ -1,9 +1,0 @@
-name: maple
-root: ~/Projects/maple
-startup_window: editor
-tmux_options: -2
-
-windows:
-  - server: mix phx.server
-  - editor: echo editor
-  - terminal: echo terminal

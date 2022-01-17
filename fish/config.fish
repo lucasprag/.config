@@ -12,16 +12,16 @@ set -x SHELL fish
 set -x WEBPACKER_DEV_SERVER_HOST 0.0.0.0
 
 # needed for homebrew
-set -x PATH $PATH /usr/local/opt/node@10/bin
-set -x PATH $PATH /usr/local/sbin
+#set -x PATH $PATH /usr/local/opt/node@10/bin
+#set -x PATH $PATH /usr/local/sbin
 
 ### Added by the Heroku Toolbelt
-set -x PATH "/usr/local/heroku/bin:$PATH"
+#set -x PATH "/usr/local/heroku/bin:$PATH"
 
 ### needed for flask
-set -x PYTHON /usr/local/bin/python3
-alias python python3
-alias pip pip3
+#set -x PYTHON /usr/local/bin/python3
+#alias python python3
+#alias pip pip3
 
 ### android
 #set -x ANDROID_HOME $HOME/Library/Android/sdk
@@ -112,32 +112,33 @@ abbr -a grmu "git status -s | awk '{ print $2 }' | xargs rm"
 abbr -a gp 'git pull origin (current_branch)'
 abbr -a gP 'git push origin (current_branch)'
 
+source ~/.asdf/asdf.fish
 
 ### Personal Mac
-if string match -r 'panelavelha' (uname -n) > /dev/null
+#if string match -r 'panelavelha' (uname -n) > /dev/null
 
   # asdf
-  source ~/.asdf/asdf.fish
+  #source ~/.asdf/asdf.fish
 
 ### Personal Ubuntu
-else if string match -r 'frankenstein'  (uname -n) > /dev/null
+#else if string match -r 'frankenstein'  (uname -n) > /dev/null
 
   # asdf -- installation via git
-  source ~/.asdf/asdf.fish
+  #source ~/.asdf/asdf.fish
 
 ### Work @ Smile
-else if string match -r 'smile-lucas' (uname -n) > /dev/null; or string match -r 'ec2' (uname -n) > /dev/null
+#else if string match -r 'smile-lucas' (uname -n) > /dev/null; or string match -r 'ec2' (uname -n) > /dev/null
 
   # rbenv
   # way faster than asdf to load in my work computer ¯\_(ツ)_/¯
-  status --is-interactive; and source (rbenv init -|psub)
+  #status --is-interactive; and source (rbenv init -|psub)
 
   # volta.sh
-  set -gx VOLTA_HOME "$HOME/.volta"
-  test -s "$VOLTA_HOME/load.fish"; and source "$VOLTA_HOME/load.fish"
-  string match -r ".volta" "$PATH" > /dev/null; or set -gx PATH "$VOLTA_HOME/bin" $PATH
+  #set -gx VOLTA_HOME "$HOME/.volta"
+  #test -s "$VOLTA_HOME/load.fish"; and source "$VOLTA_HOME/load.fish"
+  #string match -r ".volta" "$PATH" > /dev/null; or set -gx PATH "$VOLTA_HOME/bin" $PATH
 
-else
-  echo "Something is wrong with your configs Lucas!"
-end
+#else
+  #echo "Something is wrong with your configs Lucas!"
+#end
 
