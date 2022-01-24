@@ -11,32 +11,15 @@ set -x SHELL fish
 # set -Ux fish_user_paths $HOME/.rbenv/bin $fish_user_paths
 set -x WEBPACKER_DEV_SERVER_HOST 0.0.0.0
 
-# needed for homebrew
-#set -x PATH $PATH /usr/local/opt/node@10/bin
-#set -x PATH $PATH /usr/local/sbin
-
-### Added by the Heroku Toolbelt
-#set -x PATH "/usr/local/heroku/bin:$PATH"
-
-### needed for flask
-#set -x PYTHON /usr/local/bin/python3
-#alias python python3
-#alias pip pip3
-
-### android
-#set -x ANDROID_HOME $HOME/Library/Android/sdk
-#set -x PATH $PATH:$ANDROID_HOME/emulator
-#set -x PATH $PATH:$ANDROID_HOME/tools
-#set -x PATH $PATH:$ANDROID_HOME/tools/bin
-#set -x PATH $PATH:$ANDROID_HOME/platform-tools
+# needed for homebrew in Apple Silicon
+set -x PATH $PATH /opt/homebrew/bin/
 
 ### source secret stuff
 source ~/.private
 
 ## abbreviations
 abbr -a compose docker-compose
-abbr -a code code-insiders
-abbr -a c code-insiders
+abbr -a c code
 abbr -a s subl
 abbr -a cup docker-compose up -d
 abbr -a cs docker-compose stop
@@ -141,4 +124,3 @@ source ~/.asdf/asdf.fish
 #else
   #echo "Something is wrong with your configs Lucas!"
 #end
-
