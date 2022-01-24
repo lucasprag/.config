@@ -8,7 +8,7 @@ My personal dot files.
 - [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
 - [Powerline fonts](https://github.com/powerline/fonts)
 - [Alacritty](https://github.com/jwilm/alacritty)
-- [asdf](https://github.com/asdf-vm/asdf), [asdf-ruby](https://github.com/asdf-vm/asdf-ruby), [asdf-elixir](https://github.com/asdf-vm/asdf-elixir), etc.
+- [asdf](https://github.com/asdf-vm/asdf), [asdf-ruby](https://github.com/asdf-vm/asdf-ruby), [asdf-elixir](https://github.com/asdf-vm/asdf-elixir), [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs), [asdf-erlang](https://github.com/asdf-vm/asdf-erlang).
 - [Hammerspoon](https://www.hammerspoon.org/)
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator)
@@ -61,5 +61,5 @@ defaults write -g InitialKeyRepeat -int 13
 defaults write -g KeyRepeat -int 1
 
 # install macos apps
-brew cask install spotify iterm2 postico sublime-text keepingyouawake alacritty
+brew cask install spotify postico keepingyouawake alacritty
 ```
