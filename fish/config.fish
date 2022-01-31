@@ -20,11 +20,9 @@ source ~/.private
 ## abbreviations
 abbr -a compose docker-compose
 abbr -a c code
-abbr -a s subl
 abbr -a cup docker-compose up -d
 abbr -a cs docker-compose stop
 abbr -a n nvim
-abbr -a m make
 abbr -a f foreman
 abbr -a fr foreman run
 abbr -a frb foreman run bundle exec
@@ -37,11 +35,8 @@ abbr -a r "omf reload"
 
 ## dot directories
 abbr -a dotfiles cd ~/.dotfiles
-abbr -a dotemacs cd ~/.emacs.d
 abbr -a vimlociraptor cd ~/.config/nvim
 abbr -a simpleblack cd ~/.config/nvim/plugged/simpleblack
-abbr -a dotsublime cd ~/Library/Application\\ Support/Sublime\\ Text\\ 3/
-abbr -a notes cd ~/Dropbox/devnotes
 
 # elixir
 abbr -a pc "iex -S mix phx.server"
@@ -53,11 +48,8 @@ abbr -a be bundle exec
 
 # personal
 abbr -a labs cd ~/Projects/labs
-abbr -a grok cd ~/Projects/grokblog
 abbr -a blog cd ~/Projects/lucasprag
-abbr -a igc cd ~/Projects/igc
 abbr -a ipb cd ~/Projects/ipbpedronunes
-abbr -a maple cd ~/Projects/maple
 
 # smile
 abbr -a smile cd ~/Projects/smile
@@ -67,7 +59,6 @@ abbr -a admin cd ~/Projects/smile/smile-admin
 abbr -a rfcs cd ~/Projects/smile/rfcs
 abbr -a BI cd ~/Projects/smile/smile-bi
 abbr -a UI cd ~/Projects/smile/smile-ui
-abbr -a a tmux a -t
 
 # misc
 abbr -a https http --default-scheme=https
@@ -78,6 +69,7 @@ abbr -a hein "echo ❨╯°□°❩╯︵┻━┻ | pbcopy"
 abbr -a shit "echo ┻━┻︵ \(°□°)/ ︵ ┻━┻ | pbcopy"
 abbr -a bro "echo igso-on | pbcopy"
 abbr -a mux tmuxinator
+abbr -a a "arch -arm64"
 
 # git
 abbr -a gss git status -s
