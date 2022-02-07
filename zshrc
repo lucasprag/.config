@@ -26,23 +26,18 @@ alias drm='docker rm $(docker ps --filter=status=exited --filter=status=created 
 alias dotfiles="cd ~/.dotfiles"
 alias dotemacs="cd ~/.emacs.d"
 alias vimlociraptor="cd ~/.config/nvim"
-alias notes="cd ~/Dropbox/devnotes ; nvim notes.md"
 alias n="nvim"
-alias m="make"
 alias c="code"
 alias f="foreman"
 alias fr="foreman run"
 alias frb="foreman run bundle exec"
 alias fs="foreman start"
 alias t="foreman run bundle exec rspec"
-alias push="git push origin master"
-
-alias weather="curl wttr.in"
-alias clima="curl wttr.in" # pt-br
 
 alias wat="echo '¯\_(ツ)_/¯' | pbcopy"
 alias hein="echo ❨╯°□°❩╯︵┻━┻ | pbcopy"
 alias bro='echo igso-on | pbcopy'
+alias a="arch -arm64"
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -65,12 +60,6 @@ source ~/.dotfiles/tmuxinator/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
 
 # top secret stuff
-source ~/.private
-
-# needed for homebrew
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/node@10/bin:$PATH"
-
-alias https='http --default-scheme=https'
+#source ~/.private
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
