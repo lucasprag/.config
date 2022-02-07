@@ -87,6 +87,8 @@ abbr -a grmu "git status -s | awk '{ print $2 }' | xargs rm"
 abbr -a gp 'git pull origin (current_branch)'
 abbr -a gP 'git push origin (current_branch)'
 
+
+# Using asdf everywhere.
 source ~/.asdf/asdf.fish
 
 ### Personal Mac
