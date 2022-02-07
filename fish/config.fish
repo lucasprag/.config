@@ -14,6 +14,9 @@ set -x WEBPACKER_DEV_SERVER_HOST 0.0.0.0
 # needed for homebrew in Apple Silicon
 set -x PATH $PATH /opt/homebrew/bin/
 
+# needed for signing commits
+set -x GPG_TTY (tty)
+
 ### source secret stuff
 source ~/.private
 
@@ -86,7 +89,6 @@ abbr -a gpick "git cherry-pick"
 abbr -a grmu "git status -s | awk '{ print $2 }' | xargs rm"
 abbr -a gp 'git pull origin (current_branch)'
 abbr -a gP 'git push origin (current_branch)'
-
 
 # Using asdf everywhere.
 source ~/.asdf/asdf.fish
