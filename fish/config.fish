@@ -35,6 +35,7 @@ abbr -a p foreman run bundle exec puma -C ./config/puma.rb
 abbr -a e ember
 abbr -a fn "fzf | xargs nvim"
 abbr -a r "omf reload"
+abbr -a devnotes "cd ~/Google\ Drive/notes"
 
 ## dot directories
 abbr -a dotfiles cd ~/.dotfiles
@@ -62,6 +63,7 @@ abbr -a admin cd ~/Projects/smile/smile-admin
 abbr -a rfcs cd ~/Projects/smile/rfcs
 abbr -a BI cd ~/Projects/smile/smile-bi
 abbr -a UI cd ~/Projects/smile/smile-ui
+abbr -a customer cd ~/Projects/smile/squad-customer
 
 # misc
 abbr -a https http --default-scheme=https

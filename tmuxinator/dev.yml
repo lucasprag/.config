@@ -1,7 +1,0 @@
-name: dev
-root: ~/Projects
-startup_window: editor
-tmux_options: -2
-
-windows:
-  - terminal: echo terminal

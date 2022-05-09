@@ -1,9 +1,0 @@
-name: blog
-root: ~/Projects/lucasprag
-startup_window: editor
-tmux_options: -2
-
-windows:
-  - server: be jekyll serve --watch
-  - editor: echo editor
-  - terminal: echo terminal

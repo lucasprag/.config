@@ -1,9 +1,0 @@
-name: kwruby
-root: ~/Projects/kwruby.ca
-startup_window: editor
-tmux_options: -2
-
-windows:
-  - jekyll: be middleman
-  - editor: echo '☕️'
-  - terminal:

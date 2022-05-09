@@ -12,6 +12,7 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export SHELL=zsh
+export GPG_TTY=$(tty)
 
 # devops
 alias compose="docker-compose"
