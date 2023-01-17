@@ -4,7 +4,7 @@ startup_window: editor
 tmux_options: -2
 
 windows:
-  - smile-ui: cd ../smile-ui ; git pull ; yarn ; foreman start
+  - smile-ui: cd ../smile-ui ; git pull ; yarn ; smile-cli run yarn start
   - admin: cd ../smile-admin ; git pull ; yarn ; smile-cli run yarn start
   - internal: cd ../smile-internal ; git pull ; yarn ; smile-cli run yarn start
   - dev-env-services: cd ../dev-env-services ; echo '☕️'
