@@ -4,8 +4,10 @@
 
 #if status --is-login
 set -x LANG en_US.UTF-8
-set -x EDITOR 'nvim'
+set -x EDITOR nvim
 set -x SHELL fish
+
+set -x PATH /usr/local/bin $PATH
 
 # ruby
 # set -Ux fish_user_paths $HOME/.rbenv/bin $fish_user_paths
@@ -13,6 +15,9 @@ set -x WEBPACKER_DEV_SERVER_HOST 0.0.0.0
 
 # needed for homebrew in Apple Silicon
 set -x PATH $PATH /opt/homebrew/bin/
+
+# needed for using yarn binaries
+# set -x PATH (yarn global bin):$PATH
 
 # needed for signing commits
 set -x GPG_TTY (tty)
@@ -87,7 +92,7 @@ abbr -a gd git diff
 abbr -a gl git lg
 abbr -a gu "git status -s | grep UU"
 abbr -a gr "git remote -v"
-abbr -a gpick "git cherry-pick"
+abbr -a gk git cherry-pick
 abbr -a grmu "git status -s | awk '{ print $2 }' | xargs rm"
 abbr -a gp 'git pull origin (current_branch)'
 abbr -a gP 'git push origin (current_branch)'
@@ -98,27 +103,29 @@ source ~/.asdf/asdf.fish
 ### Personal Mac
 #if string match -r 'panelavelha' (uname -n) > /dev/null
 
-  # asdf
-  #source ~/.asdf/asdf.fish
+# asdf
+#source ~/.asdf/asdf.fish
 
 ### Personal Ubuntu
 #else if string match -r 'frankenstein'  (uname -n) > /dev/null
 
-  # asdf -- installation via git
-  #source ~/.asdf/asdf.fish
+# asdf -- installation via git
+#source ~/.asdf/asdf.fish
 
 ### Work @ Smile
 #else if string match -r 'smile-lucas' (uname -n) > /dev/null; or string match -r 'ec2' (uname -n) > /dev/null
 
-  # rbenv
-  # way faster than asdf to load in my work computer ¯\_(ツ)_/¯
-  #status --is-interactive; and source (rbenv init -|psub)
+# rbenv
+# way faster than asdf to load in my work computer ¯\_(ツ)_/¯
+#status --is-interactive; and source (rbenv init -|psub)
 
-  # volta.sh
-  #set -gx VOLTA_HOME "$HOME/.volta"
-  #test -s "$VOLTA_HOME/load.fish"; and source "$VOLTA_HOME/load.fish"
-  #string match -r ".volta" "$PATH" > /dev/null; or set -gx PATH "$VOLTA_HOME/bin" $PATH
+# volta.sh
+#set -gx VOLTA_HOME "$HOME/.volta"
+#test -s "$VOLTA_HOME/load.fish"; and source "$VOLTA_HOME/load.fish"
+#string match -r ".volta" "$PATH" > /dev/null; or set -gx PATH "$VOLTA_HOME/bin" $PATH
+
+set -x AWS_VAULT_KEYCHAIN_NAME login
 
 #else
-  #echo "Something is wrong with your configs Lucas!"
+#echo "Something is wrong with your configs Lucas!"
 #end
