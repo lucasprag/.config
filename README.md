@@ -61,5 +61,5 @@ defaults write -g InitialKeyRepeat -int 13
 defaults write -g KeyRepeat -int 1
 
 # install macos apps
-brew cask install spotify postico keepingyouawake alacritty
+brew install spotify postico keepingyouawake alacritty --cast
 ```
