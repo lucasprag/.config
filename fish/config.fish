@@ -9,6 +9,10 @@ set -x SHELL fish
 
 set -x PATH /usr/local/bin $PATH
 
+set -gx LDFLAGS "-L/opt/homebrew/opt/libpq/lib"
+set -gx CPPFLAGS "-I/opt/homebrew/opt/libpq/include"
+set -gx PKG_CONFIG_PATH "/opt/homebrew/opt/libpq/lib/pkgconfig"
+
 # ruby
 # set -Ux fish_user_paths $HOME/.rbenv/bin $fish_user_paths
 set -x WEBPACKER_DEV_SERVER_HOST 0.0.0.0
