@@ -9,9 +9,9 @@ set -x SHELL fish
 
 set -x PATH /usr/local/bin $PATH
 
-set -gx LDFLAGS "-L/opt/homebrew/opt/libpq/lib"
-set -gx CPPFLAGS "-I/opt/homebrew/opt/libpq/include"
-set -gx PKG_CONFIG_PATH "/opt/homebrew/opt/libpq/lib/pkgconfig"
+set -gx LDFLAGS -L/opt/homebrew/opt/libpq/lib
+set -gx CPPFLAGS -I/opt/homebrew/opt/libpq/include
+set -gx PKG_CONFIG_PATH /opt/homebrew/opt/libpq/lib/pkgconfig
 
 # ruby
 # set -Ux fish_user_paths $HOME/.rbenv/bin $fish_user_paths
@@ -102,7 +102,7 @@ abbr -a gp 'git pull origin (current_branch)'
 abbr -a gP 'git push origin (current_branch)'
 
 # Using asdf everywhere.
-source ~/.asdf/asdf.fish
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 ### Personal Mac
 #if string match -r 'panelavelha' (uname -n) > /dev/null
