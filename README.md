@@ -44,6 +44,7 @@ ln -sf ~/.dotfiles/tmuxinator ~/.tmuxinator
 
 # neovim
 brew install neovim
+# install Plug https://github.com/junegunn/vim-plug?tab=readme-ov-file#neovim
 
 # gemrc
 mv ~/.gemrc ~/.gemrc.original
