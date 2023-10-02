@@ -14,6 +14,7 @@ My personal dot files.
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 - [neovim](https://neovim.io)
 - [vimlociraptor](https://github.com/lucasprag/vimlociraptor)
+- [fzf](https://github.com/junegunn/fzf?tab=readme-ov-file#using-homebrew)
 
 ## Install
 
