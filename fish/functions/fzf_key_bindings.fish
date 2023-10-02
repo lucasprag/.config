@@ -1,1 +1,1 @@
-/Users/lucas/.fzf/shell/key-bindings.fish
+/opt/homebrew/opt/fzf/shell/key-bindings.fish
