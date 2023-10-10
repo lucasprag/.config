@@ -62,6 +62,9 @@ ln -s ~/.dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua
 defaults write -g InitialKeyRepeat -int 13
 defaults write -g KeyRepeat -int 1
 
+# after installing vscode. Restart vscode.
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
 # install macos apps
 brew install spotify postico keepingyouawake alacritty --cast
 ```
