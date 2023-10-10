@@ -102,13 +102,13 @@ abbr -a gp 'git pull origin (current_branch)'
 abbr -a gP 'git push origin (current_branch)'
 
 # Using asdf everywhere.
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
+# source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 ### Personal Mac
 #if string match -r 'panelavelha' (uname -n) > /dev/null
 
 # asdf
-#source ~/.asdf/asdf.fish
+source ~/.asdf/asdf.fish
 
 ### Personal Ubuntu
 #else if string match -r 'frankenstein'  (uname -n) > /dev/null
