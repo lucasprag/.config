@@ -18,7 +18,7 @@ My personal dot files.
 ## Install
 
 ```
-git clone git@github.com:lucasprag/dotfiles.git ~/.config
+git clone git@github.com:lucasprag/.config.git ~/.config
 
 # tmux
 brew install tmux
@@ -30,7 +30,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # ctrl+b + I to install plugins
 
 # tmuxinator
-curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh > ~/.dotfiles/tmuxinator/tmuxinator.zsh
 ln -sf ~/.config/tmuxinator ~/.tmuxinator
 
 # neovim
