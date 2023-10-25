@@ -56,18 +56,12 @@ Plug 'vim-scripts/restore_view.vim' " restoring cursor position and folding
 Plug 'liuchengxu/vim-which-key' " shows keybindings in popup when you press <leader>
 Plug 'tpope/vim-endwise' " helps to end certain structures
 Plug 'RRethy/vim-illuminate' " automatically highlight other uses of the current word under the cursor
-Plug 'dhruvasagar/vim-zoom' " zoom into a split
-Plug 'gerw/vim-HiLinkTrace' " provides <Plug>HiLinkTrace to debug syntax highlighting
 
 " > style
 Plug 'editorconfig/editorconfig-vim'
 
 " > status line
 Plug 'itchyny/lightline.vim' " really light and fast status line
-
-" > windows
-Plug 'romgrk/winteract.vim', { 'on': 'InteractiveWindow' } " resize windows interactively
-Plug 'wesQ3/vim-windowswap' " swap windows
 
 Plug 'stephpy/vim-yaml', { 'for': ['yml', 'yaml'] } " yml, yaml
 Plug 'dag/vim-fish', { 'for': 'fish' } " support for fish
@@ -162,12 +156,7 @@ command! ReloadVimConfig so $MYVIMRC
   \| echo 'config reloaded!'
 
 
-" open vimlociraptor's config files from anywhere
-command! OpenMappingsVim execute 'e ' g:vimlociraptor_path . '/mappings.vim'
-command! OpenPluginsVim execute 'e ' g:vimlociraptor_path . '/plugins.vim'
-command! OpenCommandsVim execute 'e ' g:vimlociraptor_path . '/commands.vim'
-command! OpenConfigsVim execute 'e ' g:vimlociraptor_path . '/configs.vim'
-command! OpenStatusLineVim execute 'e ' g:vimlociraptor_path . '/statusline.vim'
+command! OpenVimConfig execute 'e ' $MYVIMRC
 
 command! FormatElixirFile silent :!mix format %
 
@@ -429,7 +418,6 @@ let g:which_key_map.s = { 'name': '+search' }
 map s :Rg<CR>
 let g:which_key_map.s.s = ['Rg', 'search'] " ALT-A + enter to copy everything to quickfix
 let g:which_key_map.s.h = ['TurnOffSearchHighlight', 'turn off highlight']
-let g:which_key_map.s.l = ['Lines', 'lines in buffers']
 nmap <C-f> :Filetypes<CR>
 let g:which_key_map.s.f = ['Filetypes', 'filetypes'] " fuzzy search for file types and manually set it
 map r :History<CR>
@@ -455,25 +443,19 @@ let g:which_key_map.T.m = [':messages', 'messages']
 
 " v => vim ----------
 let g:which_key_map.v = { 'name': '+vim' }
+let g:which_key_map.v.c = ['OpenVimConfig', 'init.vim']
 let g:which_key_map.v.r = ['ReloadVimConfig', 'reload']
 let g:which_key_map.v.i = ['PlugInstall', 'install']
 let g:which_key_map.v.u = ['PlugUpdate', 'update']
 let g:which_key_map.v.k = ['PlugClean', 'clean']
 
-let g:which_key_map.v.h = ['<Plug>HiLinkTrace', 'show highlight link trace']
-
 " w => windows ----------
 let g:which_key_map.w = { 'name': '+windows' }
 let g:which_key_map.w.c = ['q', 'close']
 let g:which_key_map.w.o = ['only', 'close others']
-let g:which_key_map.w.r = ['InteractiveWindow', 'resize interactively']
-
 let g:which_key_map.w['-']  = ['split', 'split horizontally']
 let g:which_key_map.w['/'] = ['vsplit', 'split vertically']
 nmap <C-\> :vsplit<CR>
-
-let g:which_key_map.w.s = [':EasyWindowSwap', 'swap'] " need to run it on both windows
-let g:which_key_map.w.z = ['<Plug>(zoom-toggle)', 'zoom']
 
 " ignore
 let g:which_key_map.b.u = { 'name': 'which_key_ignore' }
