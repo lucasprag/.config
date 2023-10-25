@@ -41,8 +41,7 @@ abbr -a r "omf reload"
 abbr -a devnotes "cd ~/Google\ Drive/notes"
 
 ## dot directories
-abbr -a dotfiles cd ~/.dotfiles
-abbr -a vimlociraptor cd ~/.config/nvim
+abbr -a dotfiles cd ~/.config
 abbr -a simpleblack cd ~/.config/nvim/plugged/simpleblack
 
 # elixir

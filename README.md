@@ -19,44 +19,30 @@ My personal dot files.
 ## Install
 
 ```
-git clone git@github.com:lucasprag/dotfiles.git ~/.dotfiles
+git clone git@github.com:lucasprag/dotfiles.git ~/.config
+```
 
-# fish
-mkdir -p ~/.config/fish
-mv ~/.config/fish ~/.config/fish_original
-ln -s ~/.dotfiles/fish ~/.config/fish
-
-# oh my fish
-mv ~/.config/omf/ ~/.config/omf.original
-ln -s ~/.dotfiles/omf ~/.config/omf
+```
 
 # tmux
 brew install tmux
-mv ~/.tmux.conf ~/.tmux.conf.original
-ln -sf ~/.dotfiles/tmux.conf ~/.tmux.conf
+ln -sf ~/.config/tmux.conf ~/.tmux.conf
+
+# install tmux plugins
 mkdir -p ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # ctrl+b + I to install plugins
 
 # tmuxinator
 curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh > ~/.dotfiles/tmuxinator/tmuxinator.zsh
-ln -sf ~/.dotfiles/tmuxinator ~/.tmuxinator
+ln -sf ~/.config/tmuxinator ~/.tmuxinator
 
 # neovim
 brew install neovim
 # install Plug https://github.com/junegunn/vim-plug?tab=readme-ov-file#neovim
 
-# gemrc
-mv ~/.gemrc ~/.gemrc.original
-ln -s ~/.dotfiles/gemrc ~/.gemrc
-
-# alacritty
-mkdir -p ~/.config/alacritty
-mv ~/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.original.yml
-ln -s ~/.dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
-
 # hammerspoon
-ln -s ~/.dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua
+ln -s ~/.config/hammerspoon/init.lua ~/.hammerspoon/init.lua
 
 # make typing great again -- re-pair bluetooth keyboard required to make it work
 defaults write -g InitialKeyRepeat -int 13
