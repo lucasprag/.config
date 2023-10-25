@@ -1,4 +1,4 @@
-# ~/.dotfiles
+# ~/.config
 
 My personal dot files.
 
@@ -13,16 +13,12 @@ My personal dot files.
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 - [neovim](https://neovim.io)
-- [vimlociraptor](https://github.com/lucasprag/vimlociraptor)
 - [fzf](https://github.com/junegunn/fzf?tab=readme-ov-file#using-homebrew)
 
 ## Install
 
 ```
 git clone git@github.com:lucasprag/dotfiles.git ~/.config
-```
-
-```
 
 # tmux
 brew install tmux
@@ -40,6 +36,7 @@ ln -sf ~/.config/tmuxinator ~/.tmuxinator
 # neovim
 brew install neovim
 # install Plug https://github.com/junegunn/vim-plug?tab=readme-ov-file#neovim
+# Follow instructions from nvim/README.md
 
 # hammerspoon
 ln -s ~/.config/hammerspoon/init.lua ~/.hammerspoon/init.lua
@@ -52,5 +49,5 @@ defaults write -g KeyRepeat -int 1
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # install macos apps
-brew install spotify postico keepingyouawake alacritty --cast
+spotify postico keepingyouawake alacritty Clipy
 ```
