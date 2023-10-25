@@ -20,14 +20,8 @@ set -x WEBPACKER_DEV_SERVER_HOST 0.0.0.0
 # needed for homebrew in Apple Silicon
 set -x PATH $PATH /opt/homebrew/bin/
 
-# needed for using yarn binaries
-# set -x PATH (yarn global bin):$PATH
-
 # needed for signing commits
 set -x GPG_TTY (tty)
-
-### source secret stuff
-source ~/.private
 
 ## abbreviations
 abbr -a compose docker-compose
@@ -129,6 +123,7 @@ source ~/.asdf/asdf.fish
 #string match -r ".volta" "$PATH" > /dev/null; or set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 set -x AWS_VAULT_KEYCHAIN_NAME login
+# smile-cli pg creds smile-core --env prod --format=url
 
 #else
 #echo "Something is wrong with your configs Lucas!"
