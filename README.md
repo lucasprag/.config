@@ -8,7 +8,6 @@ My personal dot files.
 - [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
 - [Powerline fonts](https://github.com/powerline/fonts)
 - [asdf](https://github.com/asdf-vm/asdf), [asdf-ruby](https://github.com/asdf-vm/asdf-ruby), [asdf-elixir](https://github.com/asdf-vm/asdf-elixir), [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs), [asdf-erlang](https://github.com/asdf-vm/asdf-erlang), [asdf-python](https://github.com/asdf-community/asdf-python).
-- [Hammerspoon](https://www.hammerspoon.org/)
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 - [neovim](https://neovim.io)
@@ -16,6 +15,7 @@ My personal dot files.
 
 ## MacOS apps
 - [Alacritty](https://github.com/jwilm/alacritty)
+- [Hammerspoon](https://www.hammerspoon.org/)
 - [KeepingYouAwake](https://keepingyouawake.app/)
 - [Clipy](https://github.com/Clipy/Clipy)
 - [Postico](https://eggerapps.at/postico/v1.php)
