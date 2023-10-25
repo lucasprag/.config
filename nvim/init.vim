@@ -25,12 +25,10 @@ Plug 'scrooloose/nerdcommenter' " comment code
 
 " > ruby
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] } " ruby support
-Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] } " rails support
 Plug 'sheerun/vim-haml', { 'for': 'haml' } " haml
 
 " > elixir
 Plug 'elixir-editors/vim-elixir', { 'for': ['elixir', 'eelixir'] } " syntax highlighting and filetype detection
-Plug 'slashmili/alchemist.vim', { 'for': ['elixir', 'eelixir'] } " all the other things like go to definition and format
 
 " > javascript / typescript
 Plug 'yuezk/vim-js', { 'for': 'javascript' }
@@ -464,33 +462,6 @@ let g:which_key_map.b.f = 'which_key_ignore'
 let g:which_key_map.C = { 'name': 'which_key_ignore' }
 let g:which_key_map.h = { 'name': 'which_key_ignore' }
 let g:which_key_map['!'] = { 'name': 'which_key_ignore' }
-" ----------------------------------------------
-
-" language specific mappings ----------
-" (not using ftplugin because I want all my mappings to live in one file)
-"
-" l => ruby ----------
-function! s:MapRuby()
-  let g:which_key_map.l = { 'name': '+ruby' }
-  let g:which_key_map.l.a = ['A', 'alternate']
-  let g:which_key_map.l.r = ['R', 'related']
-endfunction
-
-autocmd! FileType ruby,eruby call s:MapRuby()
-
-
-" l => elixir ----------
-function! s:MapElixir()
-  let g:which_key_map.l = { 'name': '+elixir' }
-  let g:which_key_map.l.d = [':call alchemist#exdef()', 'definition']
-  let g:which_key_map.l.e = [':call alchemist#exdoc()', 'ExDocs']
-  let g:which_key_map.l.f = [':FormatElixirFile', 'format']
-  let g:which_key_map.l.i = [':IEx', 'IEx']
-  let g:which_key_map.l.s = [':call alchemist#jump_tag_stack()', 'stack']
-endfunction
-
-autocmd! FileType elixir call s:MapElixir()
-
 " ----------------------------------------------
 
 " Copy and cut an entire line to clipboard
