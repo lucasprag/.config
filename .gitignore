@@ -3,3 +3,15 @@ tmuxinator/tmuxinator.zsh
 fish/fish_variables
 
 .bundle
+
+btop/
+configstore/
+filezilla/
+fish/functions/h2.fish
+github-copilot/
+htop/
+shopify/
+stripe/
+wireshark/
+yarn/
+zed/
