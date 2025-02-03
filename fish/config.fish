@@ -24,21 +24,14 @@ set -x PATH $PATH /opt/homebrew/bin/
 set -x GPG_TTY (tty)
 
 ## abbreviations
-abbr -a compose docker-compose
+abbr -a compose docker compose
 abbr -a c code
-abbr -a cup docker-compose up -d
-abbr -a cs docker-compose stop
+abbr -a cup docker compose up -d
+abbr -a cs docker compose stop
 abbr -a n nvim
-abbr -a f foreman
-abbr -a fr foreman run
-abbr -a frb foreman run bundle exec
-abbr -a fs foreman start
-abbr -a t foreman run bundle exec rspec
-abbr -a p foreman run bundle exec puma -C ./config/puma.rb
 abbr -a e ember
 abbr -a fn "fzf | xargs nvim"
 abbr -a r "omf reload"
-abbr -a devnotes "cd ~/Google\ Drive/notes"
 
 ## dot directories
 abbr -a dotfiles cd ~/.config
@@ -63,9 +56,7 @@ abbr -a core cd ~/Projects/smile/smile-core
 abbr -a internal cd ~/Projects/smile/smile-internal
 abbr -a admin cd ~/Projects/smile/smile-admin
 abbr -a rfcs cd ~/Projects/smile/rfcs
-abbr -a BI cd ~/Projects/smile/smile-bi
 abbr -a UI cd ~/Projects/smile/smile-ui
-abbr -a customer cd ~/Projects/smile/squad-customer
 
 # misc
 abbr -a https http --default-scheme=https
@@ -93,6 +84,7 @@ abbr -a gk git cherry-pick
 abbr -a grmu "git status -s | awk '{ print $2 }' | xargs rm"
 abbr -a gp 'git pull origin (current_branch)'
 abbr -a gP 'git push origin (current_branch)'
+abbr -a gU 'git reset --soft HEAD~'
 
 # Using asdf everywhere.
 # source /opt/homebrew/opt/asdf/libexec/asdf.fish
