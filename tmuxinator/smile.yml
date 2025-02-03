@@ -8,7 +8,7 @@ windows:
   - admin: cd ../smile-admin
   - internal: cd ../smile-internal
   - dev-env-services: cd ../dev-env-services
-  - ingestion: cd ../smile-data-ingestion-endpoints
+  - endpoints: cd ../smile-data-ingestion-endpoints
   - core: echo '☕️'
   - web: echo '☕️'
   - terminal: open /Applications/Spotify.app ; open /Applications/Slack.app
