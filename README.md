@@ -6,28 +6,26 @@ My personal dot files.
 git clone git@github.com:lucasprag/.config.git ~/.config
 ```
 
-## Setup zsh
+## zsh
 
-- install zsh and oh-my-zsh.
+Install zsh and [oh-my-zsh](https://ohmyz.sh/).
 
 ```
+brew install zsh
 mv ~/.zshrc ~/.zshrc-backup # delete it later
 ln -sf ~/.config/zshrc ~/.zshrc
 ```
 
-- install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-- install [zsh-abbr](https://github.com/olets/zsh-abbr)
+Install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
+Install [zsh-abbr](https://github.com/olets/zsh-abbr).
 
-# Setup asdf
-- [asdf](https://github.com/asdf-vm/asdf), [asdf-ruby](https://github.com/asdf-vm/asdf-ruby), [asdf-elixir](https://github.com/asdf-vm/asdf-elixir), [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs), [asdf-erlang](https://github.com/asdf-vm/asdf-erlang), [asdf-python](https://github.com/asdf-community/asdf-python).
+## asdf
+Install [asdf](https://github.com/asdf-vm/asdf), [asdf-ruby](https://github.com/asdf-vm/asdf-ruby), [asdf-elixir](https://github.com/asdf-vm/asdf-elixir), [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs), [asdf-erlang](https://github.com/asdf-vm/asdf-erlang), [asdf-python](https://github.com/asdf-community/asdf-python).
 
-# Setup Neovim
+## Neovim
 
-- [neovim](https://neovim.io)
-
-brew install neovim
-# install Plug https://github.com/junegunn/vim-plug?tab=readme-ov-file#neovim
-# Follow instructions from nvim/README.md
+Install [neovim](https://neovim.io)
+Install [Plug](https://github.com/junegunn/vim-plug?tab=readme-ov-file#neovim) and follow instructions from nvim/README.md
 
 # Install MacOS apps
 - [Hammerspoon](https://www.hammerspoon.org/)
@@ -51,5 +49,5 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Misc
 
-- [Powerline fonts](https://github.com/powerline/fonts)
-- [fzf](https://github.com/junegunn/fzf?tab=readme-ov-file#using-homebrew)
+Install [Powerline fonts](https://github.com/powerline/fonts)
+Install [fzf](https://github.com/junegunn/fzf?tab=readme-ov-file#using-homebrew)
