@@ -17,6 +17,7 @@ ln -sf ~/.config/zshrc ~/.zshrc
 ```
 
 Install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
+
 Install [zsh-abbr](https://github.com/olets/zsh-abbr).
 
 ## asdf
@@ -25,6 +26,7 @@ Install [asdf](https://github.com/asdf-vm/asdf), [asdf-ruby](https://github.com/
 ## Neovim
 
 Install [neovim](https://neovim.io)
+
 Install [Plug](https://github.com/junegunn/vim-plug?tab=readme-ov-file#neovim) and follow instructions from nvim/README.md
 
 # Install MacOS apps
@@ -50,4 +52,5 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 # Misc
 
 Install [Powerline fonts](https://github.com/powerline/fonts)
+
 Install [fzf](https://github.com/junegunn/fzf?tab=readme-ov-file#using-homebrew)
