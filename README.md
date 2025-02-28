@@ -2,47 +2,42 @@
 
 My personal dot files.
 
-## Dependencies
-
-- [fish](https://fishshell.com/)
-- [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
-- [Powerline fonts](https://github.com/powerline/fonts)
-- [asdf](https://github.com/asdf-vm/asdf), [asdf-ruby](https://github.com/asdf-vm/asdf-ruby), [asdf-elixir](https://github.com/asdf-vm/asdf-elixir), [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs), [asdf-erlang](https://github.com/asdf-vm/asdf-erlang), [asdf-python](https://github.com/asdf-community/asdf-python).
-- [tmux](https://github.com/tmux/tmux/wiki)
-- [tmuxinator](https://github.com/tmuxinator/tmuxinator)
-- [neovim](https://neovim.io)
-- [fzf](https://github.com/junegunn/fzf?tab=readme-ov-file#using-homebrew)
-
-## MacOS apps
-- [Alacritty](https://github.com/jwilm/alacritty)
-- [Hammerspoon](https://www.hammerspoon.org/)
-- [KeepingYouAwake](https://keepingyouawake.app/)
-- [Clipy](https://github.com/Clipy/Clipy)
-- [Postico](https://eggerapps.at/postico/v1.php)
-
-
-## Install
-
 ```
 git clone git@github.com:lucasprag/.config.git ~/.config
+```
 
-# tmux
-brew install tmux
-ln -sf ~/.config/tmux.conf ~/.tmux.conf
+## Setup zsh
 
-# install tmux plugins
-mkdir -p ~/.tmux/plugins/tpm
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-# ctrl+b + I to install plugins
+- install zsh and oh-my-zsh.
 
-# tmuxinator
-ln -sf ~/.config/tmuxinator ~/.tmuxinator
+```
+mv ~/.zshrc ~/.zshrc-backup # delete it later
+ln -sf ~/.config/zshrc ~/.zshrc
+```
 
-# neovim
+- install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- install [zsh-abbr](https://github.com/olets/zsh-abbr)
+
+# Setup asdf
+- [asdf](https://github.com/asdf-vm/asdf), [asdf-ruby](https://github.com/asdf-vm/asdf-ruby), [asdf-elixir](https://github.com/asdf-vm/asdf-elixir), [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs), [asdf-erlang](https://github.com/asdf-vm/asdf-erlang), [asdf-python](https://github.com/asdf-community/asdf-python).
+
+# Setup Neovim
+
+- [neovim](https://neovim.io)
+
 brew install neovim
 # install Plug https://github.com/junegunn/vim-plug?tab=readme-ov-file#neovim
 # Follow instructions from nvim/README.md
 
+# Install MacOS apps
+- [Hammerspoon](https://www.hammerspoon.org/)
+- [KeepingYouAwake](https://keepingyouawake.app/)
+- [VSCode](https://code.visualstudio.com/)
+- [Clipy](https://github.com/Clipy/Clipy)
+- [Postico](https://eggerapps.at/postico/v1.php)
+
+
+```
 # hammerspoon
 ln -s ~/.config/hammerspoon/init.lua ~/.hammerspoon/init.lua
 
@@ -53,3 +48,8 @@ defaults write -g KeyRepeat -int 1
 # after installing vscode. Restart vscode.
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 ```
+
+# Misc
+
+- [Powerline fonts](https://github.com/powerline/fonts)
+- [fzf](https://github.com/junegunn/fzf?tab=readme-ov-file#using-homebrew)
